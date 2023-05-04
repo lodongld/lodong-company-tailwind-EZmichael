@@ -1,0 +1,22 @@
+{
+    "liveServer.settings.AdvanceCustomBrowserCmdLine": "",
+    "liveSassCompile.settings.autoprefix": [],
+    "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
+    "liveSassCompile.settings.formats": [
+        {
+        "format": "expanded",
+        "extensionName": ".css",
+        "savePath": "/assets/style/css"
+        // "savePath": "/assets/vendor/bootstrap/css"
+        },
+        {
+        "format": "compressed",
+        "extensionName": ".min.css",
+        "savePath": "/assets/style/css"
+        // "savePath": "/assets/vendor/bootstrap/css"
+        }
+    ],
+    "liveSassCompile.settings.generateMap": true,
+    "liveServer.settings.port": 5505
+}
+

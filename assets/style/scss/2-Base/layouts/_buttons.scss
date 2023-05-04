@@ -1,0 +1,87 @@
+.btn-pyschotest {
+    background-color: $bianca;
+    border: 2px solid $dark;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: $s2;
+
+    &:hover, &.active {
+        border: 2px solid $birdflower;
+    }
+
+    img {
+        margin-top: $s3;
+        height: 87px;
+    }
+
+    span {
+        margin-top: $s2;
+        font-weight: 600;
+    }
+}
+
+.btn-card {
+    background-color: $rum;
+    border: 0px solid $transparent;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    border-radius: $s2;
+    // padding: $s3 $s4;
+    width: 180px;
+    height: 200px;
+
+    span {
+        text-align: center;
+        margin-top: $s4;
+        font-weight: 600;
+    }
+
+    .img-card {
+        margin-top: $s2;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+        // border: 1px solid red;
+        align-items: center;
+
+        img {
+            // height: 87px;
+            width: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+.btn-double {
+    margin-right: $s1;
+    margin-bottom: $s1;
+    span {
+
+    }
+
+    i {
+        padding: $s1;
+        border-radius: $s1;
+        &:hover {
+            background-color: $danger !important;
+        }
+    }
+}
+
+.btn-circle {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    line-height: 1 !important;
+    border-radius: 50% !important;
+    font-weight: 700 !important;
+    padding: 0 !important;
+}
+
+button {
+    white-space: nowrap;
+}

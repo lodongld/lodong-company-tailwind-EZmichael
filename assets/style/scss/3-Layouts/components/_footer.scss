@@ -1,0 +1,46 @@
+footer {
+    min-height: 200px;
+    padding: $s5 0;
+
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        @include breakpoint-lg {
+            justify-content: center;
+            flex-direction: column;
+
+        }
+
+        .footer-logo {
+
+        }
+
+        .footer-details {
+
+        }
+
+        .footer-socials {
+            @include breakpoint-lg {
+                width: 100%;
+            }
+            .social-list {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: column;
+                padding-left: $s4;
+
+                @include breakpoint-lg {
+                    padding-left: 0;
+
+                }
+            }
+        }
+    }
+
+}
