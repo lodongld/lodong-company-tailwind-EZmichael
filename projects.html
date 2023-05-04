@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favico/">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favico/favicon-16x16.png">
+  <link rel="manifest" href="./assets/img/favico/site.webmanifest">
+  <link rel="mask-icon" href="./assets/img/favico/safari-pinned-tab.svg" color="#7b7b7b">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script src="./assets/js/tailwindConfig.js"></script>
+
+  <link rel="stylesheet" href="./assets/style/css/main.min.css">
+  <title>Lodong | Projects</title>
+</head>
+<body class="overflow-x-hidden">
+  <div id="projects" class="w-full bg-black">
+    <!-- desktop view -->
+    <header class="sticky top-0 left-0 bg-black z-40">
+      <nav class="flex justify-between items-center flex-row flex-nowrap py-[1.5rem] px-[2rem] lg:px-[90px]">
+        <a href="./index.html" class="h-[50px] lg:h-[65px]">
+          <img src="./assets/img/logo/lodong-icon.png" alt="lodong logo" class="h-[50px] lg:h-[65px]">
+        </a>
+        <!-- hamburger -->
+        <div class="block md:hidden p-[0.5rem] border-2 border-transparent cursor-pointer text-white hover:border-2 hover:border-white hover:rounded">
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </div>
+
+        <!-- navlists -->
+        <div class="hidden md:block">
+          <div class="flex justify-start items-center flex-row flex-nowrap">
+            <a href="./index.html" class="text-lg text-[#8C8C8C] px-[0.5rem] lg:px-[1rem] hover:font-bold hover:text-white">Home</a>
+            <a href="./aboutus.html" class="text-lg text-[#8C8C8C]  px-[0.5rem] lg:px-[1rem] hover:font-bold hover:text-white">About Us</a>
+            <a href="./service.html" class="text-lg text-[#8C8C8C] px-[0.5rem] lg:px-[1rem] hover:font-bold hover:text-white">Service</a>
+            <a href="./projects.html" class="text-lg text-white font-bold px-[0.5rem] lg:px-[1rem] hover:font-bold hover:text-white">Projects</a>
+            <a href="./news.html" class="text-lg text-[#8C8C8C] px-[0.5rem] lg:px-[1rem] hover:font-bold hover:text-white">News</a>
+            <a href="./careers.html" class="text-lg text-[#8C8C8C] px-[0.5rem] lg:px-[1rem] hover:font-bold hover:text-white">Careers</a>
+            <a href="./contact.html" class="text-lg text-[#2B2A2A] font-medium px-[2rem] py-[0.5rem] ml-[0.75rem] lg:ml-[1rem] rounded-full bg-white drop-shadow-lg border-2 hover:bg-transparent hover:border-white hover:text-white">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- mobile view navlists [toggle hidden block]--> 
+    <aside class="hidden md:hidden absolute w-4/5 z-50 bg-neutral-950 h-full left-0 top-0">
+      <div class="h-screen flex justify-start items-center flex-col">
+        <div class="bg-opacity-5 bg-white h-auto w-full py-[1.5rem] flex justify-center items-center">
+          <a href="./index.html" class="">
+            <img src="./assets/img/logo/lodong-icon.png" alt="lodong logo" class="h-[50px] lg:h-[65px]">
+          </a>
+        </div>
+        <div class="flex justify-start items-center flex-col w-full">
+            <a href="./index.html" class="w-full text-center text-lg text-white py-[1rem] hover:font-bold">Home</a>
+            <a href="./aboutus.html" class="w-full text-center text-lg text-white py-[1rem] hover:font-bold">About Us</a>
+            <a href="./service.html" class="w-full text-center text-lg text-white py-[1rem] hover:font-bold">Service</a>
+            <a href="./projects.html" class="w-full text-center text-lg text-white font-bold py-[1rem] hover:font-bold">Projects</a>
+            <a href="./news.html" class="w-full text-center text-lg text-white py-[1rem] hover:font-bold">News</a>
+            <a href="./careers.html" class="w-full text-center text-lg text-white py-[1rem] hover:font-bold">Careers</a>
+            <a href="./contact.html" class="text-lg text-white px-[2rem] py-[0.75rem] mt-[1rem] rounded-full border-2 border-transparent bg-[#242424] text-white drop-shadow-lg hover:bg-transparent hover:border-[#242424]">Contact</a>
+          </div>
+      </div>
+    </aside>
+
+    <!-- content -->
+    <main class="min-h-[calc(100vh_-_113px)] pt-[30px]">
+      <!-- search -->
+      <section class="w-full mb-[120px]">
+        <div class="flex justify-between items-center flex-row border-b mx-[135px] py-[20px]">
+          <!-- all project arrow down -->
+          <div class="pl-[30px] flex justify-start items-center text-white gap-x-[25px]">
+            <p class="text-[20px]">All Projects</p>
+            <i class="fa-sharp fa-regular fa-angle-down"></i>
+          </div>
+
+          <!-- search & tags -->
+          <div class="flex justify-end items-center">
+            <!-- tags -->
+            <div class="flex justify-end items-center gap-x-[25px] text-[#FF6767]">
+              <p class="leading-tighter text-[18px] whitespace-nowrap">#  안드로이드  Android</p>
+              <p class="leading-tighter text-[18px] whitespace-nowrap">#  Web 구축</p>
+              <p class="leading-tighter text-[18px] whitespace-nowrap">#  ios</p>
+              <p class="leading-tighter text-[18px] whitespace-nowrap">#  앱개발</p>
+              <p class="leading-tighter text-[18px] whitespace-nowrap">#  플랫폼 구축</p>
+              <p class="leading-tighter text-[18px] whitespace-nowrap">#  홈페이지 구축</p>
+              <p class="leading-tighter text-[18px] whitespace-nowrap"># SEO</p>
+
+
+              <div class="w-[440px] flex justify-end items-center flex-row  py-0 bg-white rounded text-black">
+                <input type="search" class="grow text-center rounded border-0 focus:shadow-none focus:outline-none focus:border-transparent focus:ring-0"
+                  placeholder="찾으시는 프로젝트가 있으신가요?">
+                <button>
+                  <i class="fa-sharp fa-solid fa-magnifying-glass px-[1rem] "></i>
+                </button>
+              </div>
+
+
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- cards -->
+      <section class="mx-[135px] pb-[120px]">
+        <div class="w-full flex justify-start items-start flex-row flex-wrap gap-[40px]">
+          
+          <a href="./project-keflavik.html" class="h-[330px] w-[380px] rounded-[20px] bg-[#E8D265] drop-shadow-[0_5px_5px_rgba(255,255,255,0.25)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
+            <div class="relative h-[154px] bg-black rounded-t-[20px] py-[20px] px-[30px]">
+              <p class="leading-tighter text-white opacity-65 text-[13px]">Android app / Web</p>
+              <h2 class="font-bold leading-tighter text-white text-[25px]">케플라비크</h2>
+
+              <img src="./assets/img/src/projects/01.png" alt="" class="absolute bottom-[45%] left-[40%]">
+
+              <p class="leading-tighter text-white opacity-[65%] text-[15px] mt-[10px]">
+                <span>#  안드로이드  Android</span>
+                <span>#  Web 구축</span> <br>
+                <span>#  Web 구축</span>
+                <span>#  안드로이드  Android</span>
+              </p>
+            </div>
+          </a>
+
+          <a href="./project-rugolf.html" class="h-[330px] w-[380px] rounded-[20px] bg-[#26A38B] drop-shadow-[0_5px_5px_rgba(255,255,255,0.25)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
+            <div class="relative h-[154px] bg-black rounded-t-[20px] py-[20px] px-[30px]">
+              <p class="leading-tighter text-white opacity-65 text-[13px]">Android app / Web</p>
+              <h2 class="font-bold leading-tighter text-white text-[25px]">RU GOLF</h2>
+
+              <img src="./assets/img/src/projects/02.png" alt="" class="absolute bottom-[50%] left-[55%]">
+
+              <p class="leading-tighter text-white opacity-[65%] text-[15px] mt-[10px]">
+                <span>#  안드로이드  Android</span>
+                <span>#  Web 구축</span> <br>
+                <span>#  Web 구축</span>
+                <span>#  안드로이드  Android</span>
+              </p>
+            </div>
+          </a>
+
+          <a href="./project-caremanager.html" class="h-[330px] w-[380px] rounded-[20px] bg-[#7790D0] drop-shadow-[0_5px_5px_rgba(255,255,255,0.25)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
+            <div class="relative h-[154px] bg-black rounded-t-[20px] py-[20px] px-[30px]">
+              <p class="leading-tighter text-white opacity-65 text-[13px]">Android app / Web</p>
+              <h2 class="font-bold leading-tighter text-white text-[25px]">
+                돌봄대장
+              </h2>
+
+              <img src="./assets/img/src/projects/03.png" alt="" class="absolute bottom-[-5%] left-[32%]">
+
+              <p class="leading-tighter text-white opacity-[45%] text-[15px] mt-[10px]">
+                <span>#  안드로이드  Android</span>
+                <span>#  Web 구축</span> <br>
+                <span>#  Web 구축</span>
+                <span>#  안드로이드  Android</span>
+              </p>
+            </div>
+          </a>
+
+          <a href="./project-washcube.html" class="h-[330px] w-[380px] rounded-[20px] bg-[#004BB4] drop-shadow-[0_5px_5px_rgba(255,255,255,0.25)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
+            <div class="relative h-[154px] bg-black rounded-t-[20px] py-[20px] px-[30px]">
+              <p class="leading-tighter text-white opacity-65 text-[13px]">
+                Kiosk
+              </p>
+              <h2 class="font-bold leading-tighter text-white text-[25px]">
+                WASHCUBE
+              </h2>
+
+              <img src="./assets/img/src/projects/04.png" alt="" class="absolute bottom-[60%] left-[28%]">
+
+              <p class="leading-tighter text-white opacity-[45%] text-[15px] mt-[10px]">
+                <span>#  안드로이드  Android</span>
+                <span>#  Web 구축</span> <br>
+                <span>#  Web 구축</span>
+                <span>#  안드로이드  Android</span>
+              </p>
+            </div>
+          </a>
+
+          <a href="./project-aicity.html" class="h-[330px] w-[380px] rounded-[20px] bg-[#EBDAC6] drop-shadow-[0_5px_5px_rgba(255,255,255,0.25)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
+            <div class="relative h-[154px] bg-black rounded-t-[20px] py-[20px] px-[30px]">
+              <p class="leading-tighter text-white opacity-65 text-[13px]">
+                Web
+              </p>
+              <h2 class="font-bold leading-tighter text-white text-[25px]">
+                AI도시를 부탁해
+              </h2>
+
+              <img src="./assets/img/src/projects/05.png" alt="" class="absolute bottom-[60%] left-[37%]">
+
+              <p class="leading-tighter text-white opacity-[45%] text-[15px] mt-[10px]">
+                <span>#  안드로이드  Android</span>
+                <span>#  Web 구축</span> <br>
+                <span>#  Web 구축</span>
+                <span>#  안드로이드  Android</span>
+              </p>
+            </div>
+          </a>
+
+          <a href="./project-winlottery.html" class="h-[330px] w-[380px] rounded-[20px] bg-[#7565EA] drop-shadow-[0_5px_5px_rgba(255,255,255,0.25)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
+            <div class="relative h-[154px] bg-black rounded-t-[20px] py-[20px] px-[30px]">
+              <p class="leading-tighter text-white opacity-65 text-[13px]">
+                Android app
+              </p>
+              <h2 class="font-bold leading-tighter text-white text-[25px]">
+                내 꿈은 로또1등
+              </h2>
+
+              <img src="./assets/img/src/projects/06.png" alt="" class="absolute bottom-[50%] left-[55%]">
+
+              <p class="leading-tighter text-white opacity-[45%] text-[15px] mt-[10px]">
+                <span>#  안드로이드  Android</span>
+                <span>#  Web 구축</span> <br>
+                <span>#  Web 구축</span>
+                <span>#  안드로이드  Android</span>
+              </p>
+            </div>
+          </a>
+
+          <a href="#" class="h-[330px] w-[380px] rounded-[20px] bg-[#292929] drop-shadow-[0_5px_5px_rgba(255,255,255,0.25)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
+            <div class="relative h-[154px] bg-black rounded-t-[20px] py-[20px] px-[30px]">
+              <p class="leading-tighter text-white opacity-65 text-[13px]">
+                Android app / Web
+              </p>
+              <h2 class="font-bold leading-tighter text-white text-[25px]">
+                  PROJECT
+              </h2>
+
+              <img src="" alt="" class="absolute bottom-[50%] left-[55%]">
+
+              <p class="leading-tighter text-white opacity-[45%] text-[15px] mt-[10px]">
+                <span>#  안드로이드  Android</span>
+                <span>#  Web 구축</span> <br>
+                <span>#  Web 구축</span>
+                <span>#  안드로이드  Android</span>
+              </p>
+            </div>
+          </a>
+
+          <a href="#" class="h-[330px] w-[380px] rounded-[20px] bg-[#292929] drop-shadow-[0_5px_5px_rgba(255,255,255,0.25)] flex justify-end flex-col overflow-hidden hover:bg-opacity-80">
+            <div class="relative h-[154px] bg-black rounded-t-[20px] py-[20px] px-[30px]">
+              <p class="leading-tighter text-white opacity-65 text-[13px]">
+                Android app / Web
+              </p>
+              <h2 class="font-bold leading-tighter text-white text-[25px]">
+                  PROJECT
+              </h2>
+
+              <img src="" alt="" class="absolute bottom-[50%] left-[55%]">
+
+              <p class="leading-tighter text-white opacity-[45%] text-[15px] mt-[10px]">
+                <span>#  안드로이드  Android</span>
+                <span>#  Web 구축</span> <br>
+                <span>#  Web 구축</span>
+                <span>#  안드로이드  Android</span>
+              </p>
+            </div>
+          </a>
+        </div>
+
+      </section>
+    </main>
+
+
+    <footer class="w-full bg-white h-[210px] flex justify-between items-center flex-row px-[90px]">
+      <!-- left -->
+      <div class="flex justify-start items-center flex-row ">
+        <!-- logo -->
+        <a href="./index.html" class="h-[76px] mr-[100px]">
+          <img src="./assets/img/logo/lodong-brand.png" alt="lodong logo" class="h-[65px]">
+        </a>
+
+        <!-- details -->
+        <div class="grow text-left leading-[32px] tracking-tighter text-[18px]">
+          <!-- name -->
+          <p class="">
+            <span class="whitespace-nowrap">
+              <span class="font-bold">상호 : </span>
+              <span class="">로동</span>
+            </span>
+
+            <span class="mx-[40px] whitespace-nowrap">
+              <span class="font-bold">대표 : </span>
+              <span class="">조이준</span>
+            </span>
+
+            <span class="whitespace-nowrap">
+              <span class="font-bold">사업자등록번호 : </span>
+              <span class="">511-53-00073</span>
+            </span>
+          </p>
+
+          <!-- address -->
+          <p class="whitespace-nowrap">
+            <span class="font-bold whitespace-nowrap">사업장 소재지 :</span>
+            <span class="whitespace-nowrap">경기도 안양시 만안구 덕천로 152번길 25 아이에스비즈타워 B동 1506호</span>
+          </p>
+
+          <!-- contacts -->
+          <p class="">
+            <span class="whitespace-nowrap">
+              <span class="font-bold">TEL : </span>
+              <span class="whitespace-nowrap">010-6575-1161 / 031-444-1161</span>
+            </span>
+
+            <span class="mx-[40px] whitespace-nowrap">
+              <span class="font-bold">FAX : </span>
+              <span class="whitespace-nowrap">031-460-8553</span>
+            </span>
+
+            <span class="whitespace-nowrap">
+              <span class="font-bold">Email : </span>
+              <span class="whitespace-nowrap">cyj@lodong.co.kr</span>
+            </span>
+          </p>
+
+        </div>
+      </div>
+
+      <!-- right/socials -->
+      <div class="flex justify-start items-start flex-col gap-[30px] ">
+        <div class="flex justify-start items-center flex-row gap-[30px]">
+          <a href="#" class="h-[50px]">
+            <img src="./assets/img/icon/facebook.png" alt="facebook" class="h-[50px]">
+          </a>
+          <a href="#" class="">
+            <img src="./assets/img/icon/instagram.png" alt="instagram" class="h-[50px]">
+          </a>
+          <a href="#" class="">
+            <img src="./assets/img/icon/kakaotalk.png" alt="kakaotalk" class="h-[50px]">
+          </a>
+          <a href="#" class="">
+            <img src="./assets/img/icon/slack.png" alt="slack" class="h-[50px]">
+          </a>
+        </div>
+
+        <p class="text-[16px] text-[#2B2A2A] tracking-tighter font-lighter">
+          Copyright ⓒ 2023 Lodong Co., Ltd. All Rights Reserved 
+        </p>
+
+      </div>
+    </footer>
+  </div>
+
+  <script src="./assets/vendor/fontawesome/fontawesome.min.js"></script>
+  <script src="./assets/js/dom.js"></script>
+  <script src="./assets/js/function.js"></script>
+</body>
+</html>

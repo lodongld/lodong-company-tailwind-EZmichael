@@ -13,18 +13,14 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <!-- <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script> -->
   <script src="./assets/js/tailwindConfig.js"></script>
 
   <link rel="stylesheet" href="./assets/style/css/main.min.css">
-  <title>Lodong</title>
+  <title>Lodong | Home</title>
 </head>
-<body>
+<body class="bg-black">
   <div id="landingPage" class="min-h-screen">
     <!-- desktop view -->
     <header class="sticky top-0 bg-opacity-50 bg-white">
@@ -40,13 +36,13 @@
         <!-- navlists -->
         <div class="hidden md:block">
           <div class="flex justify-start items-center flex-row flex-nowrap">
-            <a href="" class="text-lg text-[#242424] font-bold px-[0.5rem] lg:px-[1rem] hover:font-bold">Home</a>
-            <a href="" class="text-lg text-[#242424] px-[0.5rem] lg:px-[1rem] hover:font-bold ">About Us</a>
-            <a href="" class="text-lg text-[#242424] px-[0.5rem] lg:px-[1rem] hover:font-bold">Service</a>
-            <a href="" class="text-lg text-[#242424] px-[0.5rem] lg:px-[1rem] hover:font-bold">Projects</a>
-            <a href="" class="text-lg text-[#242424] px-[0.5rem] lg:px-[1rem] hover:font-bold">News</a>
-            <a href="" class="text-lg text-[#242424] px-[0.5rem] lg:px-[1rem] hover:font-bold">Careers</a>
-            <a href="" class="text-lg text-[#242424] font-medium px-[2rem] py-[0.5rem] ml-[0.75rem] lg:ml-[1rem] rounded-full bg-[#242424] text-white drop-shadow-lg border-2 hover:bg-transparent hover:border-[#242424] hover:text-[#242424]">Contact</a>
+            <a href="./index.html" class="text-lg text-[#242424] font-bold px-[0.5rem] lg:px-[1rem] hover:font-bold">Home</a>
+            <a href="./aboutus.html" class="text-lg text-[#242424] px-[0.5rem] lg:px-[1rem] hover:font-bold ">About Us</a>
+            <a href="./service.html" class="text-lg text-[#242424] px-[0.5rem] lg:px-[1rem] hover:font-bold">Service</a>
+            <a href="./projects.html" class="text-lg text-[#242424] px-[0.5rem] lg:px-[1rem] hover:font-bold">Projects</a>
+            <a href="./news.html" class="text-lg text-[#242424] px-[0.5rem] lg:px-[1rem] hover:font-bold">News</a>
+            <a href="./careers.html" class="text-lg text-[#242424] px-[0.5rem] lg:px-[1rem] hover:font-bold">Careers</a>
+            <a href="./contact.html" class="text-lg text-[#242424] font-medium px-[2rem] py-[0.5rem] ml-[0.75rem] lg:ml-[1rem] rounded-full bg-[#242424] text-white drop-shadow-lg border-2 hover:bg-transparent hover:border-[#242424] hover:text-[#242424]">Contact</a>
           </div>
         </div>
       </nav>
@@ -72,41 +68,56 @@
       </div>
     </aside>
 
+    <!-- bg-gradient-to-l from-[rgba(0,0,0,0.82)] to-80% -->
+    
+    <!-- background-image: linear-gradient(to left, rgba(0,0,0,0.73) 1%, rgba(0,0,0,0) 100%); -->
     <!-- content -->
-    <section class="min-h-[calc(100vh_-_100px)] lg:min-h-[calc(100vh_-_119px)]">
-      <!-- top -->
-      <article class="min-h-[calc(100vh_-_40vh_-_100px)] lg:min-h-[calc(100vh_-_40vh_-_119px)] w-full flex justify-end items-end flex-col px-[2rem] lg:px-[90px]">
-          <p class="text-white font-kumbhsans text-end" style="text-shadow: 2px 2px 8px rgba(0,0,0,0.8);">
-            <span class="text-[26px] lg:text-[35px] font-medium">실패 경험 </span>
-            <span class="text-[36px] lg:text-[45px] font-bold">&nbsp;ZERO</span><br/>
-            <span class="text-[26px] lg:text-[35px] font-medium">세상에 없던 디지털 솔루션 개발 전문</span>
-          </p>
-          <p class="mr-[-5px] text-[#FA2B2B] text-[100px] lg:text-[128px] leading-none font-bold tracking-tighter" style="text-shadow: 6px -6px 0px rgba(36,36,36,0.3);">LODONG</p>
-      </article>
+    <main class="min-h-[calc(100vh_-_98px)] lg:min-h-[calc(100vh_-_113px)] ">
+      <section class="min-h-[calc(100vh_-_98px)] lg:min-h-[calc(100vh_-_113px)] flex justify-start items-start flex-col">
+        <article class="w-full min-h-[calc(100vh_-_31vh_-_98px)] lg:min-h-[calc(100vh_-_31vh_-_113px)] flex justify-end items-end flex-row text-white"
+          style="background-image: linear-gradient(to left top, rgba(0,0,0,0.82) 1%, transparent 40%);">
+          <div class="px-[2rem] lg:px-[90px]" >
+            <p class="text-white font-kumbhsans text-end " style="text-shadow: 2px 2px 8px rgba(0,0,0,0.8);">
+              <span class="text-[24px] lg:text-[31px] font-medium">실패 경험 </span>
+              <span class="text-[36px] lg:text-[45px] font-bold">&nbsp;ZERO</span><br/>
+              <span class="text-[24px] lg:text-[31px] font-medium">세상에 없던 디지털 솔루션 개발 전문</span>
+            </p>
+            <p id="xx" class="mr-[-5px] text-[#FA2B2B] text-[100px] lg:text-[128px] leading-none font-bold tracking-tighter" 
+              style="text-shadow: 12px -8px 0px rgba(255, 255, 255, 0.08);">
+              LODONG
+            </p>
+          </div>
+        </article>
+        <article class="w-full grow flex justify-start items-start text-white px-[2rem] lg:px-[90px] bg-[rgba(0,0,0,0.74)]">
+          <div class="w-full h-full flex justify-center lg:justify-between items-start flex-col lg:flex-row flex-wrap lg:flex-nowrap">
+            <!-- text -->
+            <div class="w-full xxx flex justify-center items-center lg:items-stretch pt-[1rem]">
+              <div class="w-full lg:w-[calc(100vw_-_690px)] font-bold tracking-[-0.010em] leading-[1.10] text-[32px] md:text-[45px] lg:text-[53px] xl:text-[72px] text-center lg:text-left">
+                <p class="text-white whitespace-nowrap">We Develop Innovative</p>
+                <p class="text-[#6A6A6A] whitespace-nowrap">Digital Solutions</p>
+                <div class="w-full flex justify-center lg:justify-start items-center flex-row flex-wrap lg:flex-nowrap">
+                  <p class="text-white whitespace-nowrap">Enhancing User Experience</p>
+                  <div class="mt-[1.5rem] lg:mt-[1rem] ms-0 lg:ms-[3rem] h-[2px] w-4/5 md:w-3/5 xl:w-[450px] bg-white"></div>
+                </div>
+              </div>
+            </div>
 
-      <!-- bot bg-opacity-80 bg-black  -->
-      <article class="min-h-[calc(100vh_-_60vh_+_2px)] lg:min-h-[calc(100vh_-_60vh_+_6px)]" style="background-image: linear-gradient(to top, rgba(0,0,0,0.80) 80%, rgba(0,0,0,0) 100%);">
-        <div class="min-h-[calc(100vh_-_60vh_+_2px)] lg:min-h-[calc(100vh_-_60vh_+_6px)] w-full flex justify-center lg:justify-between items-center flex-row flex-wrap px-[2rem] lg:px-[90px] ">
-
-          <!-- text -->
-          <div class="w-full lg:w-4/5 font-extrabold text-[32px] md:text-[45px] lg:text-[55px] xxl:text-[75px] leading-tight text-center lg:text-left my-[1rem]">
-            <p class="text-white">We Develop Innovative</p>
-            <p class="text-[#6A6A6A]">Digital Solutions</p>
-            <div class="w-full flex justify-center lg:justify-start items-center flex-row flex-wrap lg:flex-nowrap">
-              <p class="text-white whitespace-nowrap">Enhancing User Experience</p>
-              <div class="mt-[1.5rem] lg:mt-0 ms-0 lg:ms-[20px] h-[2px] w-4/5 md:w-3/5 xl:w-[450px] bg-[#6A6A6A]"></div>
+            <!-- arrow -->
+            <div class="w-full flex items-stretch ml-[1rem]">
+              <div class="w-full lg:h-[calc(201px_-_1rem)] xl:h-[calc(272px_-_1rem)] pt-[1rem] my-[2rem] lg:my-0 flex justify-center lg:justify-end items-center lg:items-end lg:flex-nowrap">
+                <a href="./wework.html" class="text-white cursor-pointer ">
+                  <img src="./assets/img/icon/caretdown.png" alt="arrow-down" class="fa-bounce height-[50px] lg:height-[60px]">
+                  <!-- <i class="fa-solid fa-chevrons-down fa-bounce  text-[50px] lg:text-[60px]"></i> -->
+                </a>
+              </div>
             </div>
           </div>
 
-          <!-- arrow -->
-          <div class="text-white cursor-pointer my-[1rem] ">
-            <i class="fa-solid fa-chevrons-down fa-bounce text-[50px] lg:text-[60px]"></i>
-          </div>
+        </article>
+      </section>
+    </main>
 
-        </div>
-      </article>
-    </section>
-
+    
   </div>
 
 
@@ -115,5 +126,9 @@
   <script src="./assets/vendor/fontawesome/fontawesome.min.js"></script>
   <script src="./assets/js/dom.js"></script>
   <script src="./assets/js/function.js"></script>
+
+  <script>
+    console.log(document.querySelector('.xxx').offsetHeight)
+  </script>
 </body>
 </html>

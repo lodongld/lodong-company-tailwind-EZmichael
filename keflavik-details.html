@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favico/">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favico/favicon-16x16.png">
+  <link rel="manifest" href="./assets/img/favico/site.webmanifest">
+  <link rel="mask-icon" href="./assets/img/favico/safari-pinned-tab.svg" color="#7b7b7b">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script src="./assets/js/tailwindConfig.js"></script>
+
+  <link rel="stylesheet" href="./assets/style/css/main.min.css">
+  <title>Lodong | Project - Keflavik</title>
+</head>
+<body class="overflow-x-hidden bg-black">
+  <div id="project" class="w-full ">
+    <!-- desktop view -->
+    <header class="sticky top-0 left-0 bg-black z-40">
+      <nav class="flex justify-between items-center flex-row flex-nowrap py-[1.5rem] px-[2rem] lg:px-[90px]">
+        <a href="./index.html" class="h-[50px] lg:h-[65px]">
+          <img src="./assets/img/logo/lodong-icon.png" alt="lodong logo" class="h-[50px] lg:h-[65px]">
+        </a>
+        <!-- hamburger -->
+        <div class="block md:hidden p-[0.5rem] border-2 border-transparent cursor-pointer text-white hover:border-2 hover:border-white hover:rounded">
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </div>
+
+        <!-- navlists -->
+        <div class="hidden md:block">
+          <div class="flex justify-start items-center flex-row flex-nowrap">
+            <a href="./index.html" class="text-lg text-[#8C8C8C] px-[0.5rem] lg:px-[1rem] hover:font-bold hover:text-white">Home</a>
+            <a href="./aboutus.html" class="text-lg text-[#8C8C8C]  px-[0.5rem] lg:px-[1rem] hover:font-bold hover:text-white">About Us</a>
+            <a href="./service.html" class="text-lg text-[#8C8C8C] px-[0.5rem] lg:px-[1rem] hover:font-bold hover:text-white">Service</a>
+            <a href="./projects.html" class="text-lg text-white font-bold px-[0.5rem] lg:px-[1rem] hover:font-bold hover:text-white">Projects</a>
+            <a href="./news.html" class="text-lg text-[#8C8C8C] px-[0.5rem] lg:px-[1rem] hover:font-bold hover:text-white">News</a>
+            <a href="./careers.html" class="text-lg text-[#8C8C8C] px-[0.5rem] lg:px-[1rem] hover:font-bold hover:text-white">Careers</a>
+            <a href="./contact.html" class="text-lg text-[#2B2A2A] font-medium px-[2rem] py-[0.5rem] ml-[0.75rem] lg:ml-[1rem] rounded-full bg-white drop-shadow-lg border-2 hover:bg-transparent hover:border-white hover:text-white">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- mobile view navlists [toggle hidden block]--> 
+    <aside class="hidden md:hidden absolute w-4/5 z-50 bg-neutral-950 h-full left-0 top-0">
+      <div class="h-screen flex justify-start items-center flex-col">
+        <div class="bg-opacity-5 bg-white h-auto w-full py-[1.5rem] flex justify-center items-center">
+          <a href="./index.html" class="">
+            <img src="./assets/img/logo/lodong-icon.png" alt="lodong logo" class="h-[50px] lg:h-[65px]">
+          </a>
+        </div>
+        <div class="flex justify-start items-center flex-col w-full">
+            <a href="./index.html" class="w-full text-center text-lg text-white py-[1rem] hover:font-bold">Home</a>
+            <a href="./aboutus.html" class="w-full text-center text-lg text-white py-[1rem] hover:font-bold">About Us</a>
+            <a href="./service.html" class="w-full text-center text-lg text-white py-[1rem] hover:font-bold">Service</a>
+            <a href="./projects.html" class="w-full text-center text-lg text-white font-bold py-[1rem] hover:font-bold">Projects</a>
+            <a href="./news.html" class="w-full text-center text-lg text-white py-[1rem] hover:font-bold">News</a>
+            <a href="./careers.html" class="w-full text-center text-lg text-white py-[1rem] hover:font-bold">Careers</a>
+            <a href="./contact.html" class="text-lg text-white px-[2rem] py-[0.75rem] mt-[1rem] rounded-full border-2 border-transparent bg-[#242424] text-white drop-shadow-lg hover:bg-transparent hover:border-[#242424]">Contact</a>
+          </div>
+      </div>
+    </aside>
+
+    <!-- content -->
+    <main class="min-h-[calc(100vh_-_113px)]">
+
+      <!-- 01 -->
+      <section class="w-full h-[740px] flex justify-end items-end flex-col">
+        <div class="relative grow px-[450px] h-[670px] w-full flex justify-center items-start flex-col">
+          <p class="text-[#FFCF03] text-[20px]">시공부터 결제까지 한 번에 해결 ! </p>
+          <h1 class="text-[80px] font-bold text-white">케플라비크</h1>
+          <img src="./assets/img/src/projects/01/01.png" alt="" class="absolute bottom-[-10%] right-[20%] z-10">
+        </div>
+
+        <div class="bg-[#FFCF03] h-[70px] w-full flex justify-between items-center flex-row px-[450px] z-20">
+          <p class="text-[16px]">
+            <span class="font-bold">Client</span>
+            <span class="ml-[10px]">케플라비크</span>
+          </p>
+          <p class="text-[16px]">
+            <span class="font-bold">Type of service</span>
+            <span class="ml-[10px]">Android app / Web</span>
+          </p>
+          <p class="text-[16px]">
+            <span class="font-bold">Project Year</span>
+            <span class="ml-[10px]">2022</span>
+          </p>
+          <p class="text-[16px]">
+            <span class="font-bold">Duration</span>
+            <span class="ml-[10px]">6개월 소요</span>
+          </p>
+        </div>
+      </section>
+
+      <!-- 02 -->
+      <section class="px-[365px] py-[260px] flex justify-start items-start flex-row text-white">
+        <p class="font-applesd text-[28px] mr-[170px]">
+          케플라비크
+        </p>
+        <p class="font-applesd font-thin text-[20px]">
+          오프라인박람회와 함께 온라인박람회를 개최해 직접 박람회를 방문하지 않고 시공사 정보를 알아볼 수 있습니다. <br>
+          종이계약서보다 번거롭지 않고 바로바로 기록이 남는 전자계약서로 편리한 계약시스템을 이용할 수 있습니다.
+        </p>
+      </section>
+
+      <!-- 03 -->
+      <section class="px-[365px] text-white ">
+        <p class="font-applesd text-[32px] font-bold"> ANDROID</p>
+        <div class="mt-[50px] h-[800px] w-full flex justify-between items-start ">
+          <div class="mt-[180px]">
+            <p class="mb-[30px] font-applesd text-[28px] ">설계</p>
+            <p class="mb-[30px] font-applesd font-thin text-[20px]">
+              대면으로 진행하는 계약과정과 각 시공사의 진행 <br>
+              과정을 어플을 통해 관리할 수 있도록 설계했습니다
+            </p>
+          </div>
+          <div>
+            <img src="./assets/img/src/projects/01/02.png" alt="" class="">
+          </div>
+        </div>
+      </section>
+
+      <!-- 04 -->
+      <section class="py-[300px] text-white">
+        <div class="w-full flex justify-between items-start px-[365px] ">
+          <img src="./assets/img/src/projects/01/03.png" alt="" class="">
+          <p class="font-applesd mt-[190px] text-[20px] font-thin">
+            날짜, 작업 현황, 시간을 확인하고 <br>
+            작업 가능한 직원에게 배정할 수 있습니다.
+          </p>
+        </div>
+
+        <div class="pl-[365px] pr-[250px] mt-[-150px] w-full flex justify-end items-end ">
+          <p class="font-applesd mb-[190px] text-[20px] font-thin">
+            날짜, 작업 현황, 시간을 확인하고 <br>
+            작업 가능한 직원에게 배정할 수 있습니다.
+          </p>
+          <img src="./assets/img/src/projects/01/04.png" alt="" class="">
+        </div>
+      </section>
+
+      <!-- 05 -->
+      <section class="px-[365px] text-white">
+        <p class="font-applesd text-[32px] font-bold"> WEB </p>
+        <div class="mt-[-90px] h-[800px] w-full flex justify-between items-end ">
+          <div class="">
+            <p class="mb-[30px] font-applesd text-[28px]">설계</p>
+            <p class="mb-[100px] font-applesd font-thin text-[20px]">
+              날짜별로 담당자를 체크해 <br>
+              <span class="font-bold"> 일정을 한번에 확인 </span> <span>하고</span> <br>
+              <span class="font-bold"> 미지정된 작업을 파악 </span> <span>합니다.</span>
+            </p>
+          </div>
+          <div class="">
+            <img src="./assets/img/src/projects/01/05.png" alt="" class="">
+          </div>
+        </div>
+      </section>
+
+      <!-- 06 -->
+      <section class="mt-[450px] mb-[300px] text-white">
+        <div class="w-full flex justify-between items-start flex-row">
+          <div class="pl-[365px]">
+            <img src="./assets/img/src/projects/01/06.png" alt="" class="">
+          </div>
+          <div class="pr-[250px]">
+            <p class="mt-[150px] font-applesd font-thin text-[20px]">
+              <span>구독 시작, 최근 결제일 등으로 </span> <br>
+              <span class="font-bold"> 구독자를 관리 </span> <span>하고 </span> <br>
+              <span>더 나은 서비스를 제안합니다.</span>
+            </p>
+          </div>
+        </div>
+      </section>
+      
+    </main>
+
+    <footer class="w-full bg-white h-[210px] flex justify-between items-center flex-row px-[90px]">
+      <!-- left -->
+      <div class="flex justify-start items-center flex-row ">
+        <!-- logo -->
+        <a href="./index.html" class="h-[76px] mr-[100px]">
+          <img src="./assets/img/logo/lodong-brand.png" alt="lodong logo" class="h-[65px]">
+        </a>
+
+        <!-- details -->
+        <div class="grow text-left leading-[32px] tracking-tighter text-[18px]">
+          <!-- name -->
+          <p class="">
+            <span class="whitespace-nowrap">
+              <span class="font-bold">상호 : </span>
+              <span class="">로동</span>
+            </span>
+
+            <span class="mx-[40px] whitespace-nowrap">
+              <span class="font-bold">대표 : </span>
+              <span class="">조이준</span>
+            </span>
+
+            <span class="whitespace-nowrap">
+              <span class="font-bold">사업자등록번호 : </span>
+              <span class="">511-53-00073</span>
+            </span>
+          </p>
+
+          <!-- address -->
+          <p class="whitespace-nowrap">
+            <span class="font-bold whitespace-nowrap">사업장 소재지 :</span>
+            <span class="whitespace-nowrap">경기도 안양시 만안구 덕천로 152번길 25 아이에스비즈타워 B동 1506호</span>
+          </p>
+
+          <!-- contacts -->
+          <p class="">
+            <span class="whitespace-nowrap">
+              <span class="font-bold">TEL : </span>
+              <span class="whitespace-nowrap">010-6575-1161 / 031-444-1161</span>
+            </span>
+
+            <span class="mx-[40px] whitespace-nowrap">
+              <span class="font-bold">FAX : </span>
+              <span class="whitespace-nowrap">031-460-8553</span>
+            </span>
+
+            <span class="whitespace-nowrap">
+              <span class="font-bold">Email : </span>
+              <span class="whitespace-nowrap">cyj@lodong.co.kr</span>
+            </span>
+          </p>
+
+        </div>
+      </div>
+
+      <!-- right/socials -->
+      <div class="flex justify-start items-start flex-col gap-[30px] ">
+        <div class="flex justify-start items-center flex-row gap-[30px]">
+          <a href="#" class="h-[50px]">
+            <img src="./assets/img/icon/facebook.png" alt="facebook" class="h-[50px]">
+          </a>
+          <a href="#" class="">
+            <img src="./assets/img/icon/instagram.png" alt="instagram" class="h-[50px]">
+          </a>
+          <a href="#" class="">
+            <img src="./assets/img/icon/kakaotalk.png" alt="kakaotalk" class="h-[50px]">
+          </a>
+          <a href="#" class="">
+            <img src="./assets/img/icon/slack.png" alt="slack" class="h-[50px]">
+          </a>
+        </div>
+
+        <p class="text-[16px] text-[#2B2A2A] tracking-tighter font-lighter">
+          Copyright ⓒ 2023 Lodong Co., Ltd. All Rights Reserved 
+        </p>
+
+      </div>
+    </footer>
+  </div>
+
+  <script src="./assets/vendor/fontawesome/fontawesome.min.js"></script>
+  <script src="./assets/js/dom.js"></script>
+  <script src="./assets/js/function.js"></script>
+</body>
+</html>

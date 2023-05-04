@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favico/">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favico/favicon-16x16.png">
+  <link rel="manifest" href="./assets/img/favico/site.webmanifest">
+  <link rel="mask-icon" href="./assets/img/favico/safari-pinned-tab.svg" color="#7b7b7b">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script src="./assets/js/tailwindConfig.js"></script>
+
+  <link rel="stylesheet" href="./assets/style/css/main.min.css">
+  <title>Lodong | Project - AI 도시를 부탁해</title>
+</head>
+<body class="overflow-x-hidden">
+  <div id="project" class="w-full bg-black">
+    <!-- desktop view -->
+    <header class="sticky top-0 left-0 bg-black z-40">
+      <nav class="flex justify-between items-center flex-row flex-nowrap py-[1.5rem] px-[2rem] lg:px-[90px]">
+        <a href="./index.html" class="h-[50px] lg:h-[65px]">
+          <img src="./assets/img/logo/lodong-icon.png" alt="lodong logo" class="h-[50px] lg:h-[65px]">
+        </a>
+        <!-- hamburger -->
+        <div class="block md:hidden p-[0.5rem] border-2 border-transparent cursor-pointer text-white hover:border-2 hover:border-white hover:rounded">
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </div>
+
+        <!-- navlists -->
+        <div class="hidden md:block">
+          <div class="flex justify-start items-center flex-row flex-nowrap">
+            <a href="./index.html" class="text-lg text-[#8C8C8C] px-[0.5rem] lg:px-[1rem] hover:font-bold hover:text-white">Home</a>
+            <a href="./aboutus.html" class="text-lg text-[#8C8C8C]  px-[0.5rem] lg:px-[1rem] hover:font-bold hover:text-white">About Us</a>
+            <a href="./service.html" class="text-lg text-[#8C8C8C] px-[0.5rem] lg:px-[1rem] hover:font-bold hover:text-white">Service</a>
+            <a href="./projects.html" class="text-lg text-white font-bold px-[0.5rem] lg:px-[1rem] hover:font-bold hover:text-white">Projects</a>
+            <a href="./news.html" class="text-lg text-[#8C8C8C] px-[0.5rem] lg:px-[1rem] hover:font-bold hover:text-white">News</a>
+            <a href="./careers.html" class="text-lg text-[#8C8C8C] px-[0.5rem] lg:px-[1rem] hover:font-bold hover:text-white">Careers</a>
+            <a href="./contact.html" class="text-lg text-[#2B2A2A] font-medium px-[2rem] py-[0.5rem] ml-[0.75rem] lg:ml-[1rem] rounded-full bg-white drop-shadow-lg border-2 hover:bg-transparent hover:border-white hover:text-white">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- mobile view navlists [toggle hidden block]--> 
+    <aside class="hidden md:hidden absolute w-4/5 z-50 bg-neutral-950 h-full left-0 top-0">
+      <div class="h-screen flex justify-start items-center flex-col">
+        <div class="bg-opacity-5 bg-white h-auto w-full py-[1.5rem] flex justify-center items-center">
+          <a href="./index.html" class="">
+            <img src="./assets/img/logo/lodong-icon.png" alt="lodong logo" class="h-[50px] lg:h-[65px]">
+          </a>
+        </div>
+        <div class="flex justify-start items-center flex-col w-full">
+            <a href="./index.html" class="w-full text-center text-lg text-white py-[1rem] hover:font-bold">Home</a>
+            <a href="./aboutus.html" class="w-full text-center text-lg text-white py-[1rem] hover:font-bold">About Us</a>
+            <a href="./service.html" class="w-full text-center text-lg text-white py-[1rem] hover:font-bold">Service</a>
+            <a href="./projects.html" class="w-full text-center text-lg text-white font-bold py-[1rem] hover:font-bold">Projects</a>
+            <a href="./news.html" class="w-full text-center text-lg text-white py-[1rem] hover:font-bold">News</a>
+            <a href="./careers.html" class="w-full text-center text-lg text-white py-[1rem] hover:font-bold">Careers</a>
+            <a href="./contact.html" class="text-lg text-white px-[2rem] py-[0.75rem] mt-[1rem] rounded-full border-2 border-transparent bg-[#242424] text-white drop-shadow-lg hover:bg-transparent hover:border-[#242424]">Contact</a>
+          </div>
+      </div>
+    </aside>
+
+    <!-- content -->
+    <main class="min-h-[calc(100vh_-_113px)]">
+      <section class="w-full min-h-[calc(100vh_-_113px)] flex justify-start items-center flex-row px-[90px]">
+        <!-- image -->
+        <div class="w-[945px]  h-[calc(100vh_-_113px)] flex justify-center items-center">
+          <img src="./assets/img/src/projects/p05.png" alt="" class="object-contain scale-[1.03]">
+        </div>
+
+        <!-- text -->
+        <div class="">
+          <!-- breadcrumb -->
+          <div class="flex justify-start items-center text-white font-semibold text-[16px]">
+            <p class="opacity-60 font-semibold"> Projects </p>
+            <i class="fa-solid fa-angle-right mx-[10px]"></i>
+            <p class=""> WEB</p>
+          </div>
+
+          <h1 class="font-bold text-white text-[80px] my-[2.5rem]">AI 도시를 부탁해</h1>
+
+          <p class="opacity-60 text-[17px] text-white leading-[37px] mb-[2.5rem]">
+            AI를 도입함으로써 일어나는 다양한 상황들을 제시하고 그에 대해 찬성과 반대로 갈리는 설문  <br>
+            조사입니다. 설문자가 AI 에 대해 어떤 관점을 가지고 있는지 통계를 가져올 수 있습니다.   <br>
+            <br>
+          </p>
+
+          <!-- hover:bg-white hover:text-black hover:font-bold -->
+          <a href="./aicity-details.html" class="text-white text-[16px] px-[2.75rem] py-[0.85rem] bg-transparent rounded-full border-2 border-white hover:bg-white hover:text-black hover:font-bold">
+            <i class="fa-solid fa-plus"></i>
+            <span class="ml-[10px] font-bold"> 더 보기 </span>
+          </a>
+
+          <div class="mt-[100px] text-white flex justify-start items-center flex-row">
+            <p class="font-[16px] w-[340px]">
+              <span class="font-bold mr-[20px]">Client</span>
+              <span class="opacity-60">미확인</span>
+            </p>
+            <p class="font-[16px] w-[340px]">
+              <span class="font-bold mr-[20px]">Project Year</span>
+              <span class="opacity-60">2022</span>
+            </p>
+          </div>
+          <div class="mt-[15px] text-white flex justify-start items-center flex-row">
+            <p class="font-[16px] w-[340px]">
+              <span class="font-bold mr-[20px]">Type of service</span>
+              <span class="opacity-60">Web</span>
+            </p>
+            <p class="font-[16px] w-[340px]">
+              <span class="font-bold mr-[20px]">Duration</span>
+              <span class="opacity-60">6개월 소요</span>
+            </p>
+          </div>
+
+
+          <div class="mt-[45px] text-[#FF6767] tracking-tighter">
+            <p>
+              <span class="mr-[20px]">#  인공지능 윤리 설문조사</span>
+              <span class="mr-[20px]">#  AI</span>
+              <span class="mr-[20px]">#  WEB 구축</span>
+              <span class="mr-[20px]">#  AI 도입 설문 통계 분석</span>
+            </p>
+            <p class="mt-[10px]">
+              <span class="mr-[20px]">#  결과에 따른 유형별 캐릭터</span>
+              <span class="mr-[20px]">#  관리자 모드</span>
+              <span class="mr-[20px]"></span>
+            </p>
+          </div>
+        </div>
+
+        <!-- dots -->
+        <div class="grow h-[calc(100vh_-_113px)] flex justify-end item-center">
+          <div class="flex justify-center item-center flex-col gap-y-[15px]">
+            <div class="h-[10px] w-[10px] rounded-full bg-white bg-opacity-20"></div>
+            <div class="h-[10px] w-[10px] rounded-full bg-white bg-opacity-20"></div>
+            <div class="h-[10px] w-[10px] rounded-full bg-white bg-opacity-20"></div>
+            <div class="h-[10px] w-[10px] rounded-full bg-white bg-opacity-20"></div>
+            <div class="h-[10px] w-[10px] rounded-full bg-white "></div>
+            <div class="h-[10px] w-[10px] rounded-full bg-white bg-opacity-20"></div>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+  </div>
+
+  <script src="./assets/vendor/fontawesome/fontawesome.min.js"></script>
+  <script src="./assets/js/dom.js"></script>
+  <script src="./assets/js/function.js"></script>
+</body>
+</html>

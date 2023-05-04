@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favico/">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favico/favicon-16x16.png">
+  <link rel="manifest" href="./assets/img/favico/site.webmanifest">
+  <link rel="mask-icon" href="./assets/img/favico/safari-pinned-tab.svg" color="#7b7b7b">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script src="./assets/js/tailwindConfig.js"></script>
+
+  <link rel="stylesheet" href="./assets/style/css/main.min.css">
+  <title>Lodong | Contact</title>
+</head>
+<body class="overflow-x-hidden">
+  <div id="contact" class="w-full h-screen relative">
+    <!-- desktop view -->
+    <!-- bg-white bg-opacity-30 -->
+    <header class="sticky top-0 left-0 bg-transparent z-40">
+      <nav class="flex justify-between items-center flex-row flex-nowrap py-[1.5rem] px-[2rem] lg:px-[90px]">
+        <a href="./index.html" class="h-[50px] lg:h-[65px]">
+          <img src="./assets/img/logo/lodong-icon.png" alt="lodong logo" class="h-[50px] lg:h-[65px]">
+        </a>
+        <!-- hamburger -->
+        <div class="block md:hidden p-[0.5rem] border-2 border-transparent cursor-pointer text-white hover:border-2 hover:border-white hover:rounded">
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </div>
+
+        <!-- navlists -->
+        <div class="hidden md:block">
+          <div class="flex justify-start items-center flex-row flex-nowrap">
+            <a href="./index.html" class="text-lg text-[#2B2A2A] px-[0.5rem] lg:px-[1rem] hover:font-bold">Home</a>
+            <a href="./aboutus.html" class="text-lg text-[#2B2A2A] px-[0.5rem] lg:px-[1rem] hover:font-bold">About Us</a>
+            <a href="./service.html" class="text-lg text-[#2B2A2A] px-[0.5rem] lg:px-[1rem] hover:font-bold">Service</a>
+            <a href="./projects.html" class="text-lg text-[#2B2A2A] px-[0.5rem] lg:px-[1rem] hover:font-bold">Projects</a>
+            <a href="./news.html" class="text-lg text-[#2B2A2A] px-[0.5rem] lg:px-[1rem] hover:font-bold">News</a>
+            <a href="./careers.html" class="text-lg text-[#2B2A2A] px-[0.5rem] lg:px-[1rem] hover:font-bold">Careers</a>
+            <a href="./contact.html" class="text-lg text-[#2B2A2A] font-medium px-[2rem] py-[0.5rem] ml-[0.75rem] lg:ml-[1rem] rounded-full bg-transparent border border-[rgba(43, 42, 42, 0.42)] shadow-lg hover:bg-white hover:bg-opacity-30">Contact</a>
+          </div>
+          <!-- filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 0.6)) -->
+        </div>
+      </nav>
+    </header>
+
+    <!-- mobile view navlists [toggle hidden block]--> 
+    <aside class="hidden md:hidden absolute w-4/5 z-50 bg-neutral-950 h-full left-0 top-0">
+      <div class="h-screen flex justify-start items-center flex-col">
+        <div class="bg-opacity-5 bg-white h-auto w-full py-[1.5rem] flex justify-center items-center">
+          <a href="./index.html" class="">
+            <img src="./assets/img/logo/lodong-icon.png" alt="lodong logo" class="h-[50px] lg:h-[65px]">
+          </a>
+        </div>
+        <div class="flex justify-start items-center flex-col w-full">
+            <a href="./index.html" class="w-full text-center text-lg text-white  py-[1rem] hover:font-bold">Home</a>
+            <a href="./aboutus.html" class="w-full text-center text-lg text-white py-[1rem] hover:font-bold">About Us</a>
+            <a href="./service.html" class="w-full text-center text-lg text-white py-[1rem] hover:font-bold">Service</a>
+            <a href="./projects.html" class="w-full text-center text-lg text-white py-[1rem] hover:font-bold">Projects</a>
+            <a href="./news.html" class="w-full text-center text-lg text-white py-[1rem] hover:font-bold">News</a>
+            <a href="./careers.html" class="w-full text-center text-lg text-white font-bold py-[1rem] hover:font-bold">Careers</a>
+            <a href="./contact.html" class="text-lg text-white px-[2rem] py-[0.75rem] mt-[1rem] rounded-full border-2 border-transparent bg-[#242424] text-white drop-shadow-lg hover:bg-transparent hover:border-[#242424]">Contact</a>
+          </div>
+      </div>
+    </aside>
+
+    <!-- content -->
+    <main class="min-h-[calc(100vh_-_113px)] h-[calc(100vh_-_113px)] border border-transparent">
+      <section class="w-full pl-[250px] mt-[85px] flex justify-between items-end flex-row">
+        <div class="">
+          <div class="flex justify-start items-end">
+            <h1 class="font-applesd text-[#FD3A3A] font-extrabold text-[87px] leading-none tracking-tighter mr-[15px]"> 로동</h1>
+            <p class="font-applesd text-[25px] text-[#2B2A2A] font-medium mb-[8px]">이 함께 하겠습니다, </p>
+          </div>
+          <p class="font-applesd text-[25px] text-[#2B2A2A] font-medium mt-[30px]">
+            더 나은 사용자 경험 ( Better User Experience ) <br>
+            그리고 성공적인 IT개발을 향한 그 여정.
+          </p>
+        </div>
+        <div class="grow flex justify-end items-end pr-[108px]">
+          <div class="font-applesd text-[25px] text-[#2B2A2A] opacity-80 font-medium mt-[30px]">
+            <p>
+              <span class="font-applesd font-extrabold">오시는 길 :</span> 경기도 안양시 만안구 덕천로 152번길 25 아이에스비즈타워 B동 1506호  <br>
+            </p>
+            <p class="font-applesd">
+              <span class="whitespace-nowrap">
+                <span class="font-extrabold">TEL : </span>
+                <span class="whitespace-nowrap">010-6575-1161</span>
+              </span>
+
+              <span class="mx-[40px] whitespace-nowrap">
+                <span class="font-extrabold">FAX : </span>
+                <span class="whitespace-nowrap">031-0000-0000</span>
+              </span>
+
+              <span class="whitespace-nowrap">
+                <span class="font-extrabold">Email : </span>
+                <span class="whitespace-nowrap">cyj@lodong.co.kr</span>
+              </span>
+            </p>
+          </div>
+
+          <div class="mb-[30px]">
+            <img src="./assets/img/icon/pinloc.png" alt="">
+          </div>
+        </div>
+      </section>
+
+      <!-- form -->
+      <section class="w-full flex justify-center items-center mt-[140px] pl-[250px]">
+        <div class="flex justify-center items-center flex-row">
+          <input id="clientName" type="text" class="text-center rounded-[20px] h-[60px] w-[306px] border-[#2B2A2A] bg-transparent text-[18px] focus:border-[#2B2A2A] focus:ring-0" placeholder="이름 (소속) 입력하기" required>
+
+          <input id="clientPhone" type="text" class="ml-[10px] text-center rounded-[20px] h-[60px] w-[306px] border-[#2B2A2A] bg-transparent text-[18px] focus:border-[#2B2A2A] focus:ring-0" placeholder="연락처 입력하기" required>
+
+          <input id="clientAgree" type="checkbox" class="ml-[30px] mr-[20px] text-center rounded-[10px] w-[27px] h-[27px] border-[0] bg-[#2B2A2A] bg-opacity-20 text-[18px] focus:border-[0]  focus:border-transparent focus:shadow-none focus:ring-0 focus:outline-[0] appearance-none checked:bg-[#2B2A2A] checked:bg-opacity-20" placeholder="연락처 입력하기" required>
+
+          <label for="clientAgree" class="text-[18px] text-[#2B2A2A] font-semibold">개인정보 수집 및 이용에 동의합니다.</labe>
+
+          <button id="contactSubmit" class="ml-[80px] h-[60px] w-[180px] rounded-[20px] text-[18px] text-center text-white bg-[#2B2A2A] hover:bg-white hover:bg-opacity-70 hover:border-2 hover:border-[#2B2A2A] hover:text-[#2B2A2A] hover:font-bold">상담 예약</button>
+        </div>
+      </section>
+    </main>
+
+    
+    <!-- modal -->
+    <div id="modal" class="hidden absolute top-0 left-0 bg-white bg-opacity-50 h-full w-full flex justify-center items-center z-[100]">
+        <div class="relative bg-[#2B2A2A] h-[106px] w-[786px] text-center text-[23px] text-white flex justify-center items-center rounded-[20px] shadow">
+          <i class="fa-sharp fa-solid fa-circle-check"></i>
+          <span class="tracking-tighter ml-[20px]">접수 완료 !  담당자가 24 시간 내에 신속하게 연락 드리겠습니다  ^_^</span>
+
+          <div id="modalClose" class="absolute cursor-pointer h-10 w-10 -right-3 -top-3 bg-[#FA2B2B] rounded-[20px]">
+            <div class="h-10 w-10 flex justify-center items-center">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+    <footer class="w-full bg-white h-[210px] flex justify-between items-center flex-row px-[90px]">
+      <!-- left -->
+      <div class="flex justify-start items-center flex-row ">
+        <!-- logo -->
+        <a href="./index.html" class="h-[76px] mr-[100px]">
+          <img src="./assets/img/logo/lodong-brand.png" alt="lodong logo" class="h-[65px]">
+        </a>
+
+        <!-- details -->
+        <div class="grow text-left leading-[32px] tracking-tighter text-[18px]">
+          <!-- name -->
+          <p class="">
+            <span class="whitespace-nowrap">
+              <span class="font-bold">상호 : </span>
+              <span class="">로동</span>
+            </span>
+
+            <span class="mx-[40px] whitespace-nowrap">
+              <span class="font-bold">대표 : </span>
+              <span class="">조이준</span>
+            </span>
+
+            <span class="whitespace-nowrap">
+              <span class="font-bold">사업자등록번호 : </span>
+              <span class="">511-53-00073</span>
+            </span>
+          </p>
+
+          <!-- address -->
+          <p class="whitespace-nowrap">
+            <span class="font-bold whitespace-nowrap">사업장 소재지 :</span>
+            <span class="whitespace-nowrap">경기도 안양시 만안구 덕천로 152번길 25 아이에스비즈타워 B동 1506호</span>
+          </p>
+
+          <!-- contacts -->
+          <p class="">
+            <span class="whitespace-nowrap">
+              <span class="font-bold">TEL : </span>
+              <span class="whitespace-nowrap">010-6575-1161 / 031-444-1161</span>
+            </span>
+
+            <span class="mx-[40px] whitespace-nowrap">
+              <span class="font-bold">FAX : </span>
+              <span class="whitespace-nowrap">031-460-8553</span>
+            </span>
+
+            <span class="whitespace-nowrap">
+              <span class="font-bold">Email : </span>
+              <span class="whitespace-nowrap">cyj@lodong.co.kr</span>
+            </span>
+          </p>
+
+        </div>
+      </div>
+
+      <!-- right/socials -->
+      <div class="flex justify-start items-start flex-col gap-[30px] ">
+        <div class="flex justify-start items-center flex-row gap-[30px]">
+          <a href="#" class="h-[50px]">
+            <img src="./assets/img/icon/facebook.png" alt="facebook" class="h-[50px]">
+          </a>
+          <a href="#" class="">
+            <img src="./assets/img/icon/instagram.png" alt="instagram" class="h-[50px]">
+          </a>
+          <a href="#" class="">
+            <img src="./assets/img/icon/kakaotalk.png" alt="kakaotalk" class="h-[50px]">
+          </a>
+          <a href="#" class="">
+            <img src="./assets/img/icon/slack.png" alt="slack" class="h-[50px]">
+          </a>
+        </div>
+
+        <p class="text-[16px] text-[#2B2A2A] tracking-tighter font-lighter">
+          Copyright ⓒ 2023 Lodong Co., Ltd. All Rights Reserved 
+        </p>
+
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="./assets/vendor/fontawesome/fontawesome.min.js"></script>
+  <script src="./assets/js/dom.js"></script>
+  <script src="./assets/js/function.js"></script>
+
+  <script>
+    document.querySelector('#contactSubmit').addEventListener('click', function() {
+      const name = document.querySelector('#clientName').value;
+      const phone = document.querySelector('#clientPhone').value;
+      const agree = document.querySelector('#clientAgree').checked;
+
+      if(!name && !phone && agree === false) {return}
+      else {
+        const url = 'http://210.99.223.38:8070/api/slack/send/contact';
+
+        const tempData = {
+          'name': name,
+          'phoneNumber': phone
+        };
+
+        const options = {
+          method: 'POST',
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(tempData),
+          redirect: 'follow'
+        };
+
+
+        fetch(url, options)
+          .then(response => response.text())
+          .then(result => {
+            document.querySelector('#modal').classList.remove('hidden');
+            document.querySelector('body').classList.add('overflow-y-hidden');
+
+            console.log(result)
+          })
+          .catch(error => console.log('error', error));
+      }
+    })
+
+    document.querySelector('#modalClose').addEventListener('click', function() {
+      document.querySelector('#modal').classList.add('hidden');
+      document.querySelector('body').classList.remove('overflow-y-hidden');
+      const name = document.querySelector('#clientName').value = null;
+      const phone = document.querySelector('#clientPhone').value = null;
+      const agree = document.querySelector('#clientAgree').checked = false;
+    })
+
+  </script>
+</body>
+</html>

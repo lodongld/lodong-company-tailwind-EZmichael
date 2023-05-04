@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favico/">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favico/favicon-16x16.png">
+  <link rel="manifest" href="./assets/img/favico/site.webmanifest">
+  <link rel="mask-icon" href="./assets/img/favico/safari-pinned-tab.svg" color="#7b7b7b">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script src="./assets/js/tailwindConfig.js"></script>
+
+  <link rel="stylesheet" href="./assets/style/css/main.min.css">
+  <title>Lodong | Project - AI 도시를 부탁해</title>
+</head>
+<body class="overflow-x-hidden">
+  <div id="project" class="w-full bg-black">
+    <!-- desktop view -->
+    <header class="sticky top-0 left-0 bg-black z-40">
+      <nav class="flex justify-between items-center flex-row flex-nowrap py-[1.5rem] px-[2rem] lg:px-[90px]">
+        <a href="./index.html" class="h-[50px] lg:h-[65px]">
+          <img src="./assets/img/logo/lodong-icon.png" alt="lodong logo" class="h-[50px] lg:h-[65px]">
+        </a>
+        <!-- hamburger -->
+        <div class="block md:hidden p-[0.5rem] border-2 border-transparent cursor-pointer text-white hover:border-2 hover:border-white hover:rounded">
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </div>
+
+        <!-- navlists -->
+        <div class="hidden md:block">
+          <div class="flex justify-start items-center flex-row flex-nowrap">
+            <a href="./index.html" class="text-lg text-[#8C8C8C] px-[0.5rem] lg:px-[1rem] hover:font-bold hover:text-white">Home</a>
+            <a href="./aboutus.html" class="text-lg text-[#8C8C8C]  px-[0.5rem] lg:px-[1rem] hover:font-bold hover:text-white">About Us</a>
+            <a href="./service.html" class="text-lg text-[#8C8C8C] px-[0.5rem] lg:px-[1rem] hover:font-bold hover:text-white">Service</a>
+            <a href="./projects.html" class="text-lg text-white font-bold px-[0.5rem] lg:px-[1rem] hover:font-bold hover:text-white">Projects</a>
+            <a href="./news.html" class="text-lg text-[#8C8C8C] px-[0.5rem] lg:px-[1rem] hover:font-bold hover:text-white">News</a>
+            <a href="./careers.html" class="text-lg text-[#8C8C8C] px-[0.5rem] lg:px-[1rem] hover:font-bold hover:text-white">Careers</a>
+            <a href="./contact.html" class="text-lg text-[#2B2A2A] font-medium px-[2rem] py-[0.5rem] ml-[0.75rem] lg:ml-[1rem] rounded-full bg-white drop-shadow-lg border-2 hover:bg-transparent hover:border-white hover:text-white">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- mobile view navlists [toggle hidden block]--> 
+    <aside class="hidden md:hidden absolute w-4/5 z-50 bg-neutral-950 h-full left-0 top-0">
+      <div class="h-screen flex justify-start items-center flex-col">
+        <div class="bg-opacity-5 bg-white h-auto w-full py-[1.5rem] flex justify-center items-center">
+          <a href="./index.html" class="">
+            <img src="./assets/img/logo/lodong-icon.png" alt="lodong logo" class="h-[50px] lg:h-[65px]">
+          </a>
+        </div>
+        <div class="flex justify-start items-center flex-col w-full">
+            <a href="./index.html" class="w-full text-center text-lg text-white py-[1rem] hover:font-bold">Home</a>
+            <a href="./aboutus.html" class="w-full text-center text-lg text-white py-[1rem] hover:font-bold">About Us</a>
+            <a href="./service.html" class="w-full text-center text-lg text-white py-[1rem] hover:font-bold">Service</a>
+            <a href="./projects.html" class="w-full text-center text-lg text-white font-bold py-[1rem] hover:font-bold">Projects</a>
+            <a href="./news.html" class="w-full text-center text-lg text-white py-[1rem] hover:font-bold">News</a>
+            <a href="./careers.html" class="w-full text-center text-lg text-white py-[1rem] hover:font-bold">Careers</a>
+            <a href="./contact.html" class="text-lg text-white px-[2rem] py-[0.75rem] mt-[1rem] rounded-full border-2 border-transparent bg-[#242424] text-white drop-shadow-lg hover:bg-transparent hover:border-[#242424]">Contact</a>
+          </div>
+      </div>
+    </aside>
+
+    <!-- content -->
+    <main class="min-h-[calc(100vh_-_113px)]">
+      <!-- 01 -->
+      <section class="w-full h-[740px] flex justify-end items-end flex-col">
+        <div class="relative grow px-[365px] h-[670px] w-full flex justify-center items-start flex-col">
+          <p class="text-[#0FA9FC] text-[20px]">인공지능 윤리 설문조사</p>
+          <h1 class="text-[80px] font-bold text-white">AI 도시를 부탁해</h1>
+          <img src="./assets/img/src/projects/05/01.png" alt="" class="absolute bottom-[60px] right-[260px] z-10">
+        </div>
+
+        <div class="bg-[#F6EFE0] h-[70px] w-full text-[#242424] flex justify-between items-center flex-row px-[450px] z-20">
+          <p class="text-[16px]">
+            <span class="font-bold">Client</span>
+            <span class="ml-[10px]">미확인</span>
+          </p>
+          <p class="text-[16px]">
+            <span class="font-bold">Type of service</span>
+            <span class="ml-[10px]">Web</span>
+          </p>
+          <p class="text-[16px]">
+            <span class="font-bold">Project Year</span>
+            <span class="ml-[10px]">2022</span>
+          </p>
+          <p class="text-[16px]">
+            <span class="font-bold">Duration</span>
+            <span class="ml-[10px]">6개월 소요</span>
+          </p>
+        </div>
+      </section>
+
+      <!-- 02 -->
+      <section class="px-[365px] py-[260px] flex justify-start items-start flex-row text-white">
+        <p class="font-applesd text-[28px] mr-[170px]">
+          AI도시를 부탁해!
+        </p>
+        <p class="font-applesd font-thin text-[20px]">
+          AI를 도입함으로써 일어나는 다양한 상황들을 제시하고 그에대해 찬성과 반대로 갈리는 설문조사입니다. <br>
+          설문자가 AI에 대해 어떤 관점을 가지고 있는지 통계를 가져올 수 있습니다.
+        </p>
+      </section>
+
+      <!-- 03 -->
+      <section class="px-[365px] mb-[310px] text-white ">
+        <p class="font-applesd text-[32px] font-bold"> WEB </p>
+        <div class="mt-[50px] w-full flex justify-between items-start">
+          <div class="mt-[270px]">
+            <p class="mb-[30px] font-applesd text-[28px] ">설계</p>
+            <p class="mb-[30px] font-applesd font-thin text-[20px]">
+              <span>다소 딱딱할 수 있는 AI라는 주제를 어린 연령대의 </span> <br>
+              <span>사용자가 좀 더 친근하게 다룰 수 있도록 </span><span class="font-bold">전체적으로 </span> <br>
+              <span class="font-bold">부드러운 색상을 활용하여 거부감을 줄였</span><span>습니다. </span>
+            </p>
+          </div>
+          <div class="">
+            <img src="./assets/img/src/projects/05/02.png" alt="" class="">
+          </div>
+        </div>
+      </section>
+
+      <!-- 04 -->
+      <section class="px-[365px] mb-[366px] text-white">
+        <div class="w-full flex justify-center items-center flex-col">
+          <p class="font-applesd mb-[95px] text-[20px] font-thin text-center">
+            <span>각 문항 상황에 맞는 삽화를 추가하여 </span> <span class="font-bold">설문조사의 이해를 도왔</span><span>습니다.</span>
+          </p>
+
+          <div class="w-full grid gap-[30px] grid-cols-4">
+            <img src="./assets/img/src/projects/05/03a.png" alt="" class="rounded-[5px] h-[264px]" style="box-shadow: 0 0 15px 0 rgba(255,255,255, 0.5);">
+            <img src="./assets/img/src/projects/05/03b.png" alt="" class="rounded-[5px] h-[264px]" style="box-shadow: 0 0 15px 0 rgba(255,255,255, 0.5);">
+            <img src="./assets/img/src/projects/05/03c.png" alt="" class="rounded-[5px] h-[264px]" style="box-shadow: 0 0 15px 0 rgba(255,255,255, 0.5);">
+            <img src="./assets/img/src/projects/05/03d.png" alt="" class="rounded-[5px] h-[264px]" style="box-shadow: 0 0 15px 0 rgba(255,255,255, 0.5);">
+            <img src="./assets/img/src/projects/05/03e.png" alt="" class="rounded-[5px] h-[264px]" style="box-shadow: 0 0 15px 0 rgba(255,255,255, 0.5);">
+            <img src="./assets/img/src/projects/05/03f.png" alt="" class="rounded-[5px] h-[264px]" style="box-shadow: 0 0 15px 0 rgba(255,255,255, 0.5);">
+            <img src="./assets/img/src/projects/05/03g.png" alt="" class="rounded-[5px] h-[264px]" style="box-shadow: 0 0 15px 0 rgba(255,255,255, 0.5);">
+            <img src="./assets/img/src/projects/05/03h.png" alt="" class="rounded-[5px] h-[264px]" style="box-shadow: 0 0 15px 0 rgba(255,255,255, 0.5);">
+            <img src="./assets/img/src/projects/05/03i.png" alt="" class="rounded-[5px] h-[264px]" style="box-shadow: 0 0 15px 0 rgba(255,255,255, 0.5);">
+            <img src="./assets/img/src/projects/05/03j.png" alt="" class="rounded-[5px] h-[264px]" style="box-shadow: 0 0 15px 0 rgba(255,255,255, 0.5);">
+            <img src="./assets/img/src/projects/05/03k.png" alt="" class="rounded-[5px] h-[264px]" style="box-shadow: 0 0 15px 0 rgba(255,255,255, 0.5);">
+            <img src="./assets/img/src/projects/05/03l.png" alt="" class="rounded-[5px] h-[264px]" style="box-shadow: 0 0 15px 0 rgba(255,255,255, 0.5);">
+          </div>
+        </div>
+      </section>
+
+      <!-- 05 -->
+      <section class="px-[267px] mb-[230px] h-[560px] text-white">
+        <div class="w-full flex justify-between items-start">
+          <!-- left images -->
+          <div class="flex justify-start flex-row">
+            <div class="w-[318px]">
+              <img src="./assets/img/src/projects/05/04a.png" alt="" class="">
+            </div>
+            <div class="w-[209px]">
+              <img src="./assets/img/src/projects/05/04b.png" alt="" class="mt-[130px] ml-[-60px]">
+            </div>
+          </div>
+
+          <div class="grow">
+            <p class="mt-[86px] font-applesd font-thin text-[20px]">
+              <span>설문 결과에 따른 유형별 </span> <span class="font-bold"> 캐릭터를 부여</span><span>해</span>  <br>
+              <span>서로 공유하며 같은 유형을 가진 사람들과</span> <br>
+              <span class="font-bold"> 결속감을 느낄 수 있는 재미를 제공</span><span>하였습니다.</span>
+            </p>
+          </div>
+
+          <div class="flex justify-end flex-row">
+            <div class="w-[165px]">
+              <img src="./assets/img/src/projects/05/04c.png" alt="" class="mt-[130px]">
+            </div>
+            <div class="w-[256px]">
+              <img src="./assets/img/src/projects/05/04d.png" alt="" class="">
+            </div>
+          </div>
+          
+        </div>
+      </section>
+
+      <!-- 06 -->
+      <section class="px-[365px] mb-[422px] text-white ">
+        <div class="w-full flex justify-between items-center">
+          <div class="">
+            <p class="mb-[30px] font-applesd font-thin text-[20px]">
+              <span>설문자의 조건을 조회하여 해당 </span> <br>
+              <span class="font-bold">설문자들의 통계를 확인</span><span>할 수 있습니다.</span>
+            </p>
+          </div>
+          <div class="">
+            <img src="./assets/img/src/projects/05/02.png" alt="" class="">
+          </div>
+        </div>
+      </section>
+
+      <!-- 07 -->
+      <section class="px-[365px] mb-[606px] text-white ">
+        <div class="w-full flex justify-between items-start">
+          <div class="">
+            <img src="./assets/img/src/projects/05/06.png" alt="" class="">
+          </div>
+          <div class="">
+            <p class="mt-[80px] font-applesd font-thin text-[20px]">
+              <span class="font-bold">각 문항마다 생각나는 자신의 의견을 </span> <br>
+              <span class="font-bold">기입</span><span>하여 AI에 대해 평소에 </span> <br>
+              <span>어떻게 생각하는지 공유할 수 있습니다.</span> <br>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 08 -->
+      <section class="px-[365px] mb-[360px] text-white ">
+        <div class="w-full flex justify-between items-center">
+          <div class="">
+            <p class="mb-[80px] font-applesd font-thin text-[20px]">
+              <span class="font-bold">관리자 페이지에서만</span> <span>보이는 의견</span> <br>
+              <span>공유 페이지에서 각 문항마다 </span> <br>
+              <span class="font-bold">설문자들이 적은 의견을 볼 수</span> <br>
+              <span class="font-bold">있</span><span>습니다.</span> <br>
+            </p>
+          </div>
+          <div class="">
+            <img src="./assets/img/src/projects/05/07.png" alt="" class="">
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="w-full bg-white h-[210px] flex justify-between items-center flex-row px-[90px]">
+      <!-- left -->
+      <div class="flex justify-start items-center flex-row ">
+        <!-- logo -->
+        <a href="./index.html" class="h-[76px] mr-[100px]">
+          <img src="./assets/img/logo/lodong-brand.png" alt="lodong logo" class="h-[65px]">
+        </a>
+
+        <!-- details -->
+        <div class="grow text-left leading-[32px] tracking-tighter text-[18px]">
+          <!-- name -->
+          <p class="">
+            <span class="whitespace-nowrap">
+              <span class="font-bold">상호 : </span>
+              <span class="">로동</span>
+            </span>
+
+            <span class="mx-[40px] whitespace-nowrap">
+              <span class="font-bold">대표 : </span>
+              <span class="">조이준</span>
+            </span>
+
+            <span class="whitespace-nowrap">
+              <span class="font-bold">사업자등록번호 : </span>
+              <span class="">511-53-00073</span>
+            </span>
+          </p>
+
+          <!-- address -->
+          <p class="whitespace-nowrap">
+            <span class="font-bold whitespace-nowrap">사업장 소재지 :</span>
+            <span class="whitespace-nowrap">경기도 안양시 만안구 덕천로 152번길 25 아이에스비즈타워 B동 1506호</span>
+          </p>
+
+          <!-- contacts -->
+          <p class="">
+            <span class="whitespace-nowrap">
+              <span class="font-bold">TEL : </span>
+              <span class="whitespace-nowrap">010-6575-1161 / 031-444-1161</span>
+            </span>
+
+            <span class="mx-[40px] whitespace-nowrap">
+              <span class="font-bold">FAX : </span>
+              <span class="whitespace-nowrap">031-460-8553</span>
+            </span>
+
+            <span class="whitespace-nowrap">
+              <span class="font-bold">Email : </span>
+              <span class="whitespace-nowrap">cyj@lodong.co.kr</span>
+            </span>
+          </p>
+
+        </div>
+      </div>
+
+      <!-- right/socials -->
+      <div class="flex justify-start items-start flex-col gap-[30px] ">
+        <div class="flex justify-start items-center flex-row gap-[30px]">
+          <a href="#" class="h-[50px]">
+            <img src="./assets/img/icon/facebook.png" alt="facebook" class="h-[50px]">
+          </a>
+          <a href="#" class="">
+            <img src="./assets/img/icon/instagram.png" alt="instagram" class="h-[50px]">
+          </a>
+          <a href="#" class="">
+            <img src="./assets/img/icon/kakaotalk.png" alt="kakaotalk" class="h-[50px]">
+          </a>
+          <a href="#" class="">
+            <img src="./assets/img/icon/slack.png" alt="slack" class="h-[50px]">
+          </a>
+        </div>
+
+        <p class="text-[16px] text-[#2B2A2A] tracking-tighter font-lighter">
+          Copyright ⓒ 2023 Lodong Co., Ltd. All Rights Reserved 
+        </p>
+
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="./assets/vendor/fontawesome/fontawesome.min.js"></script>
+  <script src="./assets/js/dom.js"></script>
+  <script src="./assets/js/function.js"></script>
+</body>
+</html>

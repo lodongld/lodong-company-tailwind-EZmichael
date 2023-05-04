@@ -1,5 +1,59 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@font-face {
+  font-family: "Apple SD Gothic Neo";
+  font-style: normal;
+  font-weight: 100;
+  src: local("Apple SD Gothic Neo Thin"), url("/assets/font/AppleSDGothicNeo/100_AppleSDGothicNeo-Thin.ttf") format("truetype"), url("/assets/font/AppleSDGothicNeo/100_AppleSDGothicNeo-Thin.woff2") format("woff2"), url("/assets/font/AppleSDGothicNeo/100_AppleSDGothicNeo-Thin.otf") format("opentype");
+}
+@font-face {
+  font-family: "Apple SD Gothic Neo";
+  font-style: normal;
+  font-weight: 200;
+  src: local("Apple SD Gothic Neo UltraLight"), url("/assets/font/AppleSDGothicNeo/200_AppleSDGothicNeo-UltraLight.ttf") format("truetype"), url("/assets/font/AppleSDGothicNeo/200_AppleSDGothicNeo-UltraLight.woff2") format("woff2"), url("/assets/font/AppleSDGothicNeo/200_AppleSDGothicNeo-UltraLight.otf") format("opentype");
+}
+@font-face {
+  font-family: "Apple SD Gothic Neo";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Apple SD Gothic Neo Light"), url("/assets/font/AppleSDGothicNeo/300_AppleSDGothicNeo-Light.ttf") format("truetype"), url("/assets/font/AppleSDGothicNeo/300_AppleSDGothicNeo-Light.woff2") format("woff2"), url("/assets/font/AppleSDGothicNeo/300_AppleSDGothicNeo-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "Apple SD Gothic Neo";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Apple SD Gothic Neo Regular"), url("/assets/font/AppleSDGothicNeo/400_AppleSDGothicNeo-Regular.ttf") format("truetype"), url("/assets/font/AppleSDGothicNeo/400_AppleSDGothicNeo-Regular.woff2") format("woff2"), url("/assets/font/AppleSDGothicNeo/400_AppleSDGothicNeo-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Apple SD Gothic Neo";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Apple SD Gothic Neo Medium"), url("/assets/font/AppleSDGothicNeo/500_AppleSDGothicNeo-Medium.ttf") format("truetype"), url("/assets/font/AppleSDGothicNeo/500_AppleSDGothicNeo-Medium.woff2") format("woff2"), url("/assets/font/AppleSDGothicNeo/500_AppleSDGothicNeo-Medium.otf") format("opentype");
+}
+@font-face {
+  font-family: "Apple SD Gothic Neo";
+  font-style: normal;
+  font-weight: 600;
+  src: local("Apple SD Gothic Neo SemiBold"), url("/assets/font/AppleSDGothicNeo/600_AppleSDGothicNeo-SemiBold.ttf") format("truetype"), url("/assets/font/AppleSDGothicNeo/600_AppleSDGothicNeo-SemiBold.woff2") format("woff2"), url("/assets/font/AppleSDGothicNeo/600_AppleSDGothicNeo-SemiBold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Apple SD Gothic Neo";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Apple SD Gothic Neo Bold"), url("/assets/font/AppleSDGothicNeo/700_AppleSDGothicNeo-Bold.ttf") format("truetype"), url("/assets/font/AppleSDGothicNeo/700_AppleSDGothicNeo-Bold.woff2") format("woff2"), url("/assets/font/AppleSDGothicNeo/700_AppleSDGothicNeo-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Apple SD Gothic Neo";
+  font-style: normal;
+  font-weight: 800;
+  src: local("Apple SD Gothic Neo ExtraBold"), url("/assets/font/AppleSDGothicNeo/800_AppleSDGothicNeo-ExtraBold.ttf") format("truetype"), url("/assets/font/AppleSDGothicNeo/800_AppleSDGothicNeo-ExtraBold.woff2") format("woff2"), url("/assets/font/AppleSDGothicNeo/800_AppleSDGothicNeo-ExtraBold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Apple SD Gothic Neo";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Apple SD Gothic Neo Heavy"), url("/assets/font/AppleSDGothicNeo/900_AppleSDGothicNeo-Heavy.ttf") format("truetype"), url("/assets/font/AppleSDGothicNeo/900_AppleSDGothicNeo-Heavy.woff2") format("woff2"), url("/assets/font/AppleSDGothicNeo/900_AppleSDGothicNeo-Heavy.otf") format("opentype");
+}
 *,
 *::before,
 *::after {
@@ -11,15 +65,15 @@ body {
 }
 
 .font-inter {
-  font-family: "Inter", sans-serif !important;
+  font-family: "Inter" !important;
 }
 
 .font-kumbhsans {
-  font-family: "Kumbh Sans", sans-serif !important;
+  font-family: "Kumbh Sans" !important;
 }
 
 .font-applesd {
-  font-family: "Apple SD Gothic Neo", sans-serif !important;
+  font-family: "Apple SD Gothic Neo" !important;
 }
 
 /* width */
@@ -50,4 +104,24 @@ body {
   background-position: center center;
   background-blend-mode: saturation;
   background-repeat: no-repeat;
+}
+
+#contact {
+  background: url("../../img/bg/bg-contact.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#services .services-circle:hover {
+  background: #D9D9D9;
+}
+#services .services-circle:hover .title {
+  color: #2B2A2A;
+}
+#services .services-circle:hover .first {
+  display: none;
+}
+#services .services-circle:hover .second {
+  display: block;
 }/*# sourceMappingURL=main.css.map */
