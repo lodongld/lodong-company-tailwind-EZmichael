@@ -131,9 +131,8 @@
     
     <!-- modal -->
     <div id="modal" class="hidden absolute top-0 left-0 bg-white bg-opacity-50 h-full w-full flex justify-center items-center z-[100]">
-        <div class="relative bg-[#2B2A2A] h-[106px] w-[786px] text-center text-[23px] text-white flex justify-center items-center rounded-[20px] shadow">
-          <i class="fa-sharp fa-solid fa-circle-check"></i>
-          <span class="tracking-tighter ml-[20px]">접수 완료 !  담당자가 24 시간 내에 신속하게 연락 드리겠습니다  ^_^</span>
+        <div class="relative bg-[#2B2A2A] h-[106px] w-[786px] text-center text-[23px] px-[40px] text-white flex justify-start items-center rounded-[20px] shadow">
+          <div id="modalMessage" class="text-left"></div>
 
           <div id="modalClose" class="absolute cursor-pointer h-10 w-10 -right-3 -top-3 bg-[#FA2B2B] rounded-[20px]">
             <div class="h-10 w-10 flex justify-center items-center">
@@ -235,33 +234,14 @@
       const phone = document.querySelector('#clientPhone').value;
       const agree = document.querySelector('#clientAgree').checked;
 
-      if(!name) {
-        document.querySelector('#clientName').classList.add('border-[#dc2626]');
-        document.querySelector('#clientName').classList.remove('border-[#2B2A2A]');
-      } else if(name){
-        document.querySelector('#clientName').classList.remove('border-[#dc2626]');
-        document.querySelector('#clientName').classList.add('border-[#2B2A2A]');
+      if(!name || !phone || agree === false)  {
+          document.querySelector('#modal').classList.remove('hidden');
+          document.querySelector('body').classList.add('overflow-y-hidden');
+          const error = `<i class="fa-sharp fa-solid fa-circle-exclamation"></i>
+                        <span class="tracking-tighter ml-[20px]">이름과 연락처를 입력해 주세요</span>`;
+          document.querySelector('#modalMessage').innerHTML = error;
       }
-
-
-      if(!phone) {
-        document.querySelector('#clientPhone').classList.add('border-[#dc2626]');
-        document.querySelector('#clientPhone').classList.remove('border-[#2B2A2A]');
-      } else if(phone){
-        document.querySelector('#clientPhone').classList.remove('border-[#dc2626]');
-        document.querySelector('#clientPhone').classList.add('border-[#2B2A2A]');
-      }
-
-
-      if(agree === false) {
-        document.querySelector('#clientAgree').classList.add('border-[#dc2626]');
-        document.querySelector('#clientAgree').classList.remove('border-[#C7CDCF]');
-      } else if (agree === true) {
-        document.querySelector('#clientAgree').classList.remove('border-[#dc2626]');
-        document.querySelector('#clientAgree').classList.add('border-[#C7CDCF]');
-      }
-
-      if(name && phone && agree === true) {
+      else if(name && phone && agree === true) {
         const url = 'http://210.99.223.38:8070/api/slack/send/contact';
 
         const tempData = {
@@ -282,10 +262,11 @@
         fetch(url, options)
           .then(response => response.text())
           .then(result => {
+            const success = `<i class="fa-sharp fa-solid fa-circle-check"></i>
+              <span class="tracking-tighter ml-[20px]">접수 완료 !  담당자가 24 시간 내에 신속하게 연락 드리겠습니다  ^_^</span>`;
             document.querySelector('#modal').classList.remove('hidden');
             document.querySelector('body').classList.add('overflow-y-hidden');
-
-            console.log(result)
+            document.querySelector('#modalMessage').innerHTML = success;
           })
           .catch(error => console.log('error', error));
       }
