@@ -235,7 +235,7 @@
       const phone = document.querySelector('#clientPhone').value;
       const agree = document.querySelector('#clientAgree').checked;
 
-      if(!name && !phone && agree === false) {return}
+      if(!name || !phone || agree === false) {return}
       else {
         const url = 'http://210.99.223.38:8070/api/slack/send/contact';
 
