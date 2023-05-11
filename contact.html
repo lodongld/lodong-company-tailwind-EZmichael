@@ -96,7 +96,7 @@
 
               <span class="mx-[40px] whitespace-nowrap">
                 <span class="font-extrabold">FAX : </span>
-                <span class="whitespace-nowrap">031-0000-0000</span>
+                <span class="whitespace-nowrap">031-460-8553</span>
               </span>
 
               <span class="whitespace-nowrap">
@@ -119,7 +119,7 @@
 
           <input id="clientPhone" type="text" class="ml-[10px] text-center rounded-[20px] h-[60px] w-[306px] border-[#2B2A2A] bg-transparent text-[18px] focus:border-[#2B2A2A] focus:ring-0" placeholder="연락처 입력하기" required>
 
-          <input id="clientAgree" type="checkbox" class="ml-[30px] mr-[20px] text-center rounded-[10px] w-[27px] h-[27px] border-[0] bg-[#2B2A2A] bg-opacity-20 text-[18px] focus:border-[0]  focus:border-transparent focus:shadow-none focus:ring-0 focus:outline-[0] appearance-none checked:bg-[#2B2A2A] checked:bg-opacity-20" placeholder="연락처 입력하기" required>
+          <input id="clientAgree" type="checkbox" class="ml-[30px] mr-[20px] text-center rounded-[10px] w-[27px] h-[27px] border-[#C7CDCF] border- bg-[#2B2A2A] bg-opacity-20 text-[18px] focus:border-[0]  focus:border-transparent focus:shadow-none focus:ring-0 focus:outline-[0] appearance-none checked:bg-[#2B2A2A] checked:bg-opacity-20" placeholder="연락처 입력하기" required>
 
           <label for="clientAgree" class="text-[18px] text-[#2B2A2A] font-semibold">개인정보 수집 및 이용에 동의합니다.</labe>
 
@@ -235,8 +235,33 @@
       const phone = document.querySelector('#clientPhone').value;
       const agree = document.querySelector('#clientAgree').checked;
 
-      if(!name || !phone || agree === false) {return}
-      else {
+      if(!name) {
+        document.querySelector('#clientName').classList.add('border-[#dc2626]');
+        document.querySelector('#clientName').classList.remove('border-[#2B2A2A]');
+      } else if(name){
+        document.querySelector('#clientName').classList.remove('border-[#dc2626]');
+        document.querySelector('#clientName').classList.add('border-[#2B2A2A]');
+      }
+
+
+      if(!phone) {
+        document.querySelector('#clientPhone').classList.add('border-[#dc2626]');
+        document.querySelector('#clientPhone').classList.remove('border-[#2B2A2A]');
+      } else if(phone){
+        document.querySelector('#clientPhone').classList.remove('border-[#dc2626]');
+        document.querySelector('#clientPhone').classList.add('border-[#2B2A2A]');
+      }
+
+
+      if(agree === false) {
+        document.querySelector('#clientAgree').classList.add('border-[#dc2626]');
+        document.querySelector('#clientAgree').classList.remove('border-[#C7CDCF]');
+      } else if (agree === true) {
+        document.querySelector('#clientAgree').classList.remove('border-[#dc2626]');
+        document.querySelector('#clientAgree').classList.add('border-[#C7CDCF]');
+      }
+
+      if(name && phone && agree === true) {
         const url = 'http://210.99.223.38:8070/api/slack/send/contact';
 
         const tempData = {
