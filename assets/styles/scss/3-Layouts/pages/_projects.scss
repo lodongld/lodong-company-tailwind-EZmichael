@@ -1,0 +1,33 @@
+#projectsPage {
+    // border: 1px solid red;
+    #mobileView {
+        @include breakpoint-lg {
+            display: block;
+        }
+
+        @include breakpoint-lg-up {
+            display: none;
+        }
+
+        #projectWinLottery {
+            background-image: url('../../images/img/projects/winlottery/winlottery-main-mobile-bg.png');
+            background-size: cover;
+            background-position: top right;
+            background-repeat: no-repeat;
+        }
+    }
+
+    #desktopView {
+        // border: 1px solid red;
+        width: 100%;
+        background-color: black;
+
+        @include breakpoint-lg {
+            display: none !important;
+        }
+
+        @include breakpoint-lg-up {
+            display: block !important;
+        }
+    }
+}

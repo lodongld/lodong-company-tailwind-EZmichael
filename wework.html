@@ -5,27 +5,312 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favico/">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favico/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favico/favicon-16x16.png">
-  <link rel="manifest" href="./assets/img/favico/site.webmanifest">
-  <link rel="mask-icon" href="./assets/img/favico/safari-pinned-tab.svg" color="#7b7b7b">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favico/">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favico/favicon-16x16.png">
+  <link rel="manifest" href="./assets/images/favico/site.webmanifest">
+  <link rel="mask-icon" href="./assets/images/favico/safari-pinned-tab.svg" color="#7b7b7b">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
 
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="./assets/js/tailwindConfig.js"></script>
-
-  <link rel="stylesheet" href="./assets/style/css/main.min.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="stylesheet" href="./assets/styles/css/main.min.css">
   <title>Lodong | How we work</title>
 </head>
-<body class="overflow-x-hidden bg-black">
-  <div id="weWork" class="w-full ">
+<body id="weworkPage" >
+
+  <div id="mobileView" class="animate__animated animate__backInUp">
+    <header>
+      <nav class="w-full flex justify-between items-center flex-row flex-nowrap py-[1.5rem] px-[25px]">
+        <a href="./index.html" class="h-[50px] lg:h-[65px]">
+          <img src="./assets/images/logo/lodong-icon.png" alt="lodong logo" class="h-[50px] lg:h-[65px]">
+        </a>
+        <!-- hamburger -->
+        <div id="menuBtn" class="block p-[0.5rem] border-2 border-transparent cursor-pointer hover:border-2 hover:border-black hover:rounded">
+          <i class="fa-solid fa-bars-staggered fa-flip-vertical fa-2xl"></i>
+        </div>
+      </nav>
+    </header>
+
+    <aside id="menuNav" class="fixed top-0 left-0  w-[100vw] z-50 bg-neutral-950">
+      <div class="relative h-full w-full flex justify-center items-center flex-col">
+        <div class="flex justify-start items-center flex-col w-full gap-y-[50px]">
+          <a href="./index.html" class="font-bold w-full text-[24px] text-center text-white hover:font-bold">Home</a>
+          <a href="./aboutus.html" class="w-full text-[24px] text-center text-white hover:font-bold">About Us</a>
+          <a href="./service.html" class="w-full text-[24px] text-center text-white hover:font-bold">Service</a>
+          <a href="./projects.html" class="w-full text-[24px] text-center text-white hover:font-bold">Projects</a>
+          <a href="./contact.html" class="text-[24px] font-bold text-jungle px-[2rem] py-[0.75rem] mt-[2rem] rounded-full border-2 border-transparent bg-[white] drop-shadow-lg hover:bg-transparent hover:text-[white] hover:border-[white]">Contact</a>
+        </div>
+
+        <div id="menuClose" class="absolute top-[30px] right-[25px] p-[0.75rem] border-2 border-transparent cursor-pointer hover:border-2 hover:border-[#FA2B2B] hover:rounded-full">
+          <i class="fa-solid fa-times fa-2xl text-carmine"></i>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <section class="px-[25px] mb-[60px]">
+        <div class="animate__animated animate__rotateInDownLeft animate__delay-1s pt-[20px]">
+          <p class="text-[30px] whitespace-nowrap">
+            <span class="text-carmine font-bold tracking-tighter">LODONG</span>
+            <span class="text-jungle opacity-60 text-[27px] font-medium whitespace-nowrap">의&nbsp;개발&nbsp;프로세스</span>
+          </p>
+          <p class="text-[80px] font-extrabold text-jungle tracking-tighter leading-none mt-[2rem]">How&nbsp;We Work</p>
+        </div>
+      </section>
+
+      <!-- 01 -->
+      <section class=" mb-[175px]">
+        <div class="animate__animated animate__bounceInRight animate__delay-1s w-full h-full flex justify-start items-start overflow-hidden">
+          <img src="./assets/images/img/wework/01.jpg" class="object-cover w-full h-full" alt="image01">
+        </div>
+
+        <div class="animate__animated animate__bounceInLeft animate__delay-1s mt-[60px] px-[25px]">
+          <div class="whitespace-nowrap mb-[50px] flex justify-start items-end flex-row leading-[0px]">
+            <p class="font-applesd text-carmine text-[80px] font-light pb-[8px] mr-[20px]">01</p>
+            <p class="font-applesd text-jungle text-[30px] font-light tracking-tighter mt-[20px]">컨설팅 및 솔루션</p>
+          </div>
+          <p class="text-jungle opacity-60 text-[18px] leading-10 whitespace-nowrap tracking-[-0.09em]">
+            하나를 말씀하시면 열을 아는 로동. <br>
+            대표님들의 상상을 현실로 만들어드립니다. <br> 
+            완성도 높은 컨설팅, 완벽한 솔루션으로 증명합니다. <br>
+          </p>
+        </div>
+      </section>
+
+      <!-- 02 -->
+      <section class="aniUtil_scrollDiv mb-[175px]">
+        <div class="ani_bounceInRight aniUtil_active aniUtil_dramatic w-full h-full flex justify-start items-start overflow-hidden">
+          <img src="./assets/images/img/wework/02.jpg" class="object-cover w-full h-full" alt="image01">
+        </div>
+
+        <div class="ani_bounceInLeft aniUtil_active aniUtil_dramatic mt-[60px] px-[25px]">
+          <div class="whitespace-nowrap mb-[50px] flex justify-start items-end flex-row leading-[0px]">
+            <p class="font-applesd text-carmine text-[80px] font-light pb-[8px] mr-[20px]">02</p>
+            <p class="font-applesd text-jungle text-[30px] font-light tracking-tighter mt-[20px]">기획</p>
+          </div>
+          <p class="text-jungle opacity-60 text-[18px] leading-10 whitespace-nowrap tracking-[-0.09em]">
+            노련한 경험 위에 쌓는 혁신적인 기획. 효율적인 어플리케 <br>
+            이션 구동을 위해 빈틈 없는 기획 단계를 포함합니다. <br> 
+             <br>
+          </p>
+        </div>
+      </section>
+
+
+      <!-- 03 -->
+      <section class="aniUtil_scrollDiv mb-[175px]">
+        <div class="ani_bounceInRight aniUtil_active aniUtil_dramatic w-full h-full flex justify-start items-start overflow-hidden">
+          <img src="./assets/images/img/wework/03.jpg" class="object-cover w-full h-full" alt="image01">
+        </div>
+
+        <div class="ani_bounceInLeft aniUtil_active aniUtil_dramatic mt-[60px] px-[25px]">
+          <div class="whitespace-nowrap mb-[50px] flex justify-start items-end flex-row leading-[0px]">
+            <p class="font-applesd text-carmine text-[80px] font-light pb-[8px] mr-[20px]">03</p>
+            <p class="font-applesd text-jungle text-[30px] font-light tracking-tighter mt-[20px]">디자인</p>
+          </div>
+          <p class="text-jungle opacity-60 text-[18px] leading-10 whitespace-nowrap tracking-[-0.09em]">
+            심플함과 화려함의 밸런스. 최고의 전문 디자이너와 함께  <br>
+            작업의 고급스러운 영혼을 부여합니다. <br> 
+            <br>
+          </p>
+        </div>
+      </section>
+
+
+      <!-- 04 -->
+      <section class="aniUtil_scrollDiv mb-[175px]">
+        <div class="ani_bounceInRight aniUtil_active aniUtil_dramatic w-full h-full flex justify-start items-start overflow-hidden">
+          <img src="./assets/images/img/wework/04.jpg" class="object-cover w-full h-full" alt="image01">
+        </div>
+
+        <div class="ani_bounceInLeft aniUtil_active aniUtil_dramatic mt-[60px] px-[25px]">
+          <div class="whitespace-nowrap mb-[50px] flex justify-start items-end flex-row leading-[0px]">
+            <p class="font-applesd text-carmine text-[80px] font-light pb-[8px] mr-[20px]">04</p>
+            <p class="font-applesd text-jungle text-[30px] font-light tracking-tighter mt-[20px]">개발</p>
+          </div>
+          <p class="text-jungle opacity-60 text-[18px] leading-10 whitespace-nowrap tracking-[-0.09em]">
+            몇 수 앞을 더 내다보는 로동. 단순 구동이 아닌, <br>
+            향후 보수 및 추가 기능까지 고려한 개발을 진행합니다. <br> 
+            <br>
+          </p>
+        </div>
+      </section>
+
+      <!-- 05 -->
+      <section class="aniUtil_scrollDiv mb-[175px]">
+        <div class="ani_bounceInRight aniUtil_active aniUtil_dramatic w-full h-full flex justify-start items-start overflow-hidden">
+          <img src="./assets/images/img/wework/05.jpg" class="object-cover w-full h-full" alt="image01">
+        </div>
+
+        <div class="ani_bounceInLeft aniUtil_active aniUtil_dramatic mt-[60px] px-[25px]">
+          <div class="whitespace-nowrap mb-[50px] flex justify-start items-end flex-row leading-[0px]">
+            <p class="font-applesd text-carmine text-[80px] font-light pb-[8px] mr-[20px]">05</p>
+            <p class="font-applesd text-jungle text-[30px] font-light tracking-tighter mt-[20px]">테스트</p>
+          </div>
+          <p class="text-jungle opacity-60 text-[18px] leading-10 whitespace-nowrap tracking-[-0.09em]">
+            완벽의, 완벽을 위한, 완벽에 의한 개발. 아주 사소한 문제 <br>
+            도 절대 용납하지 않습니다. <br> 
+            <br>
+          </p>
+        </div>
+      </section>
+
+      <!-- 06 -->
+      <section class="aniUtil_scrollDiv mb-[175px]">
+        <div class="ani_bounceInRight aniUtil_active aniUtil_dramatic w-full h-full flex justify-start items-start overflow-hidden">
+          <img src="./assets/images/img/wework/06.jpg" class="object-cover w-full h-full" alt="image01">
+        </div>
+
+        <div class="ani_bounceInLeft aniUtil_active aniUtil_dramatic mt-[60px] px-[25px]">
+          <div class="whitespace-nowrap mb-[50px] flex justify-start items-end flex-row leading-[0px]">
+            <p class="font-applesd text-carmine text-[80px] font-light pb-[8px] mr-[20px]">06</p>
+            <p class="font-applesd text-jungle text-[30px] font-light tracking-tighter mt-[20px]">컨설팅 및 솔루션</p>
+          </div>
+          <p class="text-jungle opacity-60 text-[18px] leading-10 whitespace-nowrap tracking-[-0.09em]">
+            하나를 말씀하시면 열을 아는 로동. 대표님들의 상상을  <br>
+            현실로 만들어드립니다. 완성도 높은 컨설팅, 완벽한  <br> 
+            솔루션으로 증명합니다. <br>
+          </p>
+        </div>
+      </section>
+
+
+      <!-- 07 -->
+      <section class="aniUtil_scrollDiv mb-[175px]">
+        <div class="ani_bounceInRight aniUtil_active aniUtil_dramatic w-full h-full flex justify-start items-start overflow-hidden">
+          <img src="./assets/images/img/wework/07.jpg" class="object-cover w-full h-full" alt="image01">
+        </div>
+
+        <div class="ani_bounceInLeft aniUtil_active aniUtil_dramatic mt-[60px] px-[25px]">
+          <div class="whitespace-nowrap mb-[50px] flex justify-start items-end flex-row leading-[0px]">
+            <p class="font-applesd text-carmine text-[80px] font-light pb-[8px] mr-[20px]">07</p>
+            <p class="font-applesd text-jungle text-[30px] font-light tracking-tighter mt-[20px]">작업완료</p>
+          </div>
+          <p class="text-jungle opacity-60 text-[18px] leading-10 whitespace-nowrap tracking-[-0.09em]">
+            완료 보고 및 개발 자료 반환과 폐기 후 개발 소스까지  <br>
+            전달해 드린 후 마무리합니다.  <br> 
+             <br>
+          </p>
+        </div>
+      </section>
+
+
+      <!-- 08 -->
+      <section class="aniUtil_scrollDiv mb-[150px]">
+        <div class="ani_bounceInRight aniUtil_active aniUtil_dramatic w-full h-full flex justify-start items-start overflow-hidden">
+          <img src="./assets/images/img/wework/08.jpg" class="object-cover w-full h-full" alt="image01">
+        </div>
+
+        <div class="ani_bounceInLeft aniUtil_active aniUtil_dramatic mt-[60px] px-[25px]">
+          <div class="whitespace-nowrap mb-[50px] flex justify-start items-end flex-row leading-[0px]">
+            <p class="font-applesd text-carmine text-[80px] font-light pb-[8px] mr-[20px]">08</p>
+            <p class="font-applesd text-jungle text-[30px] font-light tracking-tighter mt-[20px]">유지보수</p>
+          </div>
+          <p class="text-jungle opacity-60 text-[18px] leading-10 whitespace-nowrap tracking-[-0.09em]">
+            대표님과 저희의 인연은 끝까지 !  작업 완료 후에도 지속  <br>
+            적인 모니터링과 추가 AS로 절대적인 만족을 보장합니다.  <br> 
+            <br>
+          </p>
+        </div>
+      </section>
+
+
+      
+      
+    </main>
+
+    <div class="w-full text-center flex justify-center mb-[40px]">
+      <a href="./index.html" class="rotate-180">
+        <img src="./assets/images/icon/caretDownDark.png" alt="arrowUp" class="fa-bounce height-[50px]  ">
+      </a>
+    </div>
+
+
+    <footer class="pt-[50px] pb-[25px] bg-black px-[25px]">
+      <div class="w-full flex justify-between align-start flex-row flex-nowrap mb-[20px]">
+        <div class="grow flex justify-center align-start flex-col">
+
+          <div class="leading-[32px] tracking-tighter text-[16px] text-white">
+            <p class="whitespace-nowrap">
+              <span class="whitespace-nowrap">
+                <span>상호 :</span>
+                <span class="opacity-60">로동</span>
+              </span>
+
+              <span class="ml-[20px]">
+                <span>대표 :</span>
+                <span class="opacity-60">조이준</span>
+              </span>
+            </p>
+
+            <p class="whitespace-nowrap">
+              <span>사업자등록번호 :</span>
+              <span class="opacity-60">511-53-00073</span>
+            </p>
+
+            <p>
+              <span>소재지 : </span>
+              <span class="opacity-60">경기도 안양시 만안구 덕천로 152번길 25 아이에스비즈타워 B동 1506호 </span>
+            </p>
+          </div>
+
+          <div class="mt-[30px] leading-[32px] tracking-tighter text-[16px] text-white">
+            <p class="whitespace-nowrap">
+              <span>TEL :</span>
+              <span class="opacity-60">010-6575-1161 / 031-444-1161</span>
+            </p>
+
+            <p class="whitespace-nowrap">
+              <span>FAX :</span>
+              <span class="opacity-60">031-460-8553</span>
+            </p>
+
+            <p class="whitespace-nowrap">
+              <span>Email :</span>
+              <span class="opacity-60">cyj@lodong.co.kr</span>
+            </p>
+          </div>
+        </div>
+
+
+        <div class="ml-[20px] flex justify-center align-center flex-col gap-5">
+          <a href="#" class="w-full flex justify-center min-h-[45px] min-w-[45px]">
+            <img src="./assets/images/icon/facebookLight.png" class="" alt="facebook">
+          </a>
+
+          <a href="#" class="w-full flex justify-center min-h-[45px] min-w-[45px]">
+            <img src="./assets/images/icon/instagramLight.png" class="" alt="instagram">
+          </a>
+
+          <a href="#" class="w-full flex justify-center min-h-[45px] min-w-[45px]">
+            <img src="./assets/images/icon/kakaotalkLight.png" class="" alt="kakaotalk">
+          </a>
+
+          <a href="#" class="w-full flex justify-center min-h-[45px] min-w-[45px]">
+            <img src="./assets/images/icon/slackLight.png" class="" alt="slack">
+          </a>
+        </div>
+
+      </div>
+
+      <p class="mt-[50px] text-white opacity-50 text-center text-[13px] font-applesd">Copyright ⓒ 2023 Lodong Co., Ltd. All Rights Reserved.</p>
+
+    </footer>
+
+
+  </div>
+
+  <div id="desktopView" class="w-[100vw]">
     <!-- desktop view -->
-    <header class="sticky top-0 left-0 bg-black z-40">
+    <header class="bg-black z-40">
       <nav class="flex justify-between items-center flex-row flex-nowrap py-[1.5rem] px-[2rem] lg:px-[90px]">
         <a href="./index.html" class="h-[50px] lg:h-[65px]">
-          <img src="./assets/img/logo/lodong-icon.png" alt="lodong logo" class="h-[50px] lg:h-[65px]">
+          <img src="./assets/images/logo/lodong-icon.png" alt="lodong logo" class="h-[50px] lg:h-[65px]">
         </a>
         <!-- hamburger -->
         <div class="block md:hidden p-[0.5rem] border-2 border-transparent cursor-pointer text-white hover:border-2 hover:border-white hover:rounded">
@@ -39,270 +324,251 @@
             <a href="./aboutus.html" class="text-lg text-[#8C8C8C] px-[0.5rem] lg:px-[1rem] hover:font-bold hover:text-white">About Us</a>
             <a href="./service.html" class="text-lg text-[#8C8C8C] px-[0.5rem] lg:px-[1rem] hover:font-bold hover:text-white">Service</a>
             <a href="./projects.html" class="text-lg text-[#8C8C8C] px-[0.5rem] lg:px-[1rem] hover:font-bold hover:text-white">Projects</a>
-            <a href="./news.html" class="text-lg text-[#8C8C8C] px-[0.5rem] lg:px-[1rem] hover:font-bold hover:text-white">News</a>
-            <a href="./careers.html" class="text-lg text-[#8C8C8C] px-[0.5rem] lg:px-[1rem] hover:font-bold hover:text-white">Careers</a>
             <a href="./contact.html" class="text-lg text-[#2B2A2A] font-medium px-[2rem] py-[0.5rem] ml-[0.75rem] lg:ml-[1rem] rounded-full bg-white drop-shadow-lg border-2 hover:bg-transparent hover:border-white hover:text-white">Contact</a>
           </div>
         </div>
       </nav>
     </header>
 
-    <!-- mobile view navlists [toggle hidden block]--> 
-    <aside class="hidden md:hidden absolute w-4/5 z-50 bg-neutral-950 h-full left-0 top-0">
-      <div class="h-screen flex justify-start items-center flex-col">
-        <div class="bg-opacity-5 bg-white h-auto w-full py-[1.5rem] flex justify-center items-center">
-          <a href="./index.html" class="">
-            <img src="./assets/img/logo/lodong-icon.png" alt="lodong logo" class="h-[50px] lg:h-[65px]">
-          </a>
-        </div>
-        <div class="flex justify-start items-center flex-col w-full">
-            <a href="./index.html" class="w-full text-center text-lg text-white font-bold py-[1rem] hover:font-bold">Home</a>
-            <a href="./aboutus.html" class="w-full text-center text-lg text-white py-[1rem] hover:font-bold">About Us</a>
-            <a href="./service.html" class="w-full text-center text-lg text-white py-[1rem] hover:font-bold">Service</a>
-            <a href="./projects.html" class="w-full text-center text-lg text-white py-[1rem] hover:font-bold">Projects</a>
-            <a href="./news.html" class="w-full text-center text-lg text-white py-[1rem] hover:font-bold">News</a>
-            <a href="./careers.html" class="w-full text-center text-lg text-white py-[1rem] hover:font-bold">Careers</a>
-            <a href="./contact.html" class="text-lg text-white px-[2rem] py-[0.75rem] mt-[1rem] rounded-full border-2 border-transparent bg-[#242424] text-white drop-shadow-lg hover:bg-transparent hover:border-[#242424]">Contact</a>
-          </div>
-      </div>
-    </aside>
-
     <!-- content -->
-    <main class="min-h-[calc(100vh_-_113px)]">
-      <!-- 01 -->
-      <section class="h-[746px] mb-[446px]">
-        <div class="h-[746px] w-full text-white flex justify-between items-end">
-          <!-- text -->
-          <div class="pl-[2rem] lg:pl-[90px] pr-[100px] h-[746px] flex justify-between align-start flex-col ">
-            <div class="pt-[114px]">
-              <p class="text-[30px] whitespace-nowrap">
-                <span class="text-[#FA2B2B] font-bold tracking-tighter">LODONG</span>
-                <span class="text-white whitespace-nowrap">의&nbsp;개발&nbsp;프로세스</span>
-              </p>
-              <p class="text-[66px] lg:text-[80px] xl:text-[100px] font-bold text-white tracking-tighter leading-none mt-[2rem]">How&nbsp;We Work</p>
-            </div>
-
-            <div class="mt-[150px]">
-              <div class="whitespace-nowrap mb-[50px] flex justify-start items-end flex-row leading-[0px]">
-                <p class="font-applesd text-[#FA2B2B] text-[80px] font-light pb-[8px] mr-[20px]">01</p>
-                <p class="font-applesd text-white text-[30px] font-light tracking-tighter mt-[20px]">컨설팅 및 솔루션</p>
+    <div class="">
+      <main class="min-h-[calc(100vh_-_113px)]">
+        <!-- 01 -->
+        <section id="section01" class="h-[746px] mb-[446px]">
+          <div class="h-[746px] w-full text-white flex justify-between items-end">
+            <!-- text -->
+            <div class="pl-[2rem] lg:pl-[90px] pr-[100px] h-[746px] flex justify-between align-start flex-col ">
+              <div class="aniIn_bounce animate__animated animate__rotateInDownLeft animate__delay-1s pt-[114px]">
+                <p class="text-[30px] whitespace-nowrap">
+                  <span class="text-[#FA2B2B] font-bold tracking-tighter">LODONG</span>
+                  <span class="text-white whitespace-nowrap">의&nbsp;개발&nbsp;프로세스</span>
+                </p>
+                <p class="text-[66px] lg:text-[80px] xl:text-[100px] font-bold text-white tracking-tighter leading-none mt-[2rem]">How&nbsp;We Work</p>
               </div>
-              <p class="text-white text-[18px] leading-10 whitespace-nowrap">
-                하나를 말씀하시면 열을 아는 로동. <br>
-                대표님들의 상상을 현실로 만들어드립니다. <br> 
-                완성도 높은 컨설팅, 완벽한 솔루션으로 증명합니다. <br>
-              </p>
-            </div>
-          </div>
-
-          <!-- img -->
-          <div class="flex justify-end items-end h-[746px] w-[1325px]">
-            <div class="w-full h-full flex justify-start items-start overflow-hidden rounded-tl-[50px] lg:rounded-tl-[100px]">
-              <img src="./assets/img/src/landingpage/01.jpg" class="object-cover w-full h-full" alt="image01">
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 02 -->
-      <section class="h-[746px] mb-[446px]">
-        <div class="h-[746px] w-full text-white flex justify-start items-start">
   
-          <!-- img -->
-          <div class="flex justify-end items-end h-[746px] w-[1325px]">
-            <div class="w-full h-full flex justify-start items-start overflow-hidden rounded-tr-[50px] lg:rounded-tr-[100px]">
-              <img src="./assets/img/src/landingpage/02.jpg" class="object-cover  w-full h-full" alt="image02">
-            </div>
-          </div>
-  
-          <!-- text -->
-          <div class="h-[746px] ">
-            <div class="mt-[150px] ml-[72px]">
-              <div class="whitespace-nowrap mb-[50px] flex justify-start items-end flex-row leading-[0px]">
-                <p class="font-applesd text-[#FA2B2B] text-[80px] font-light pb-[8px] mr-[20px]">02</p>
-                <p class="font-applesd text-white text-[30px] font-light tracking-tighter mt-[20px]">기획</p>
+              <div class="aniIn_bounce animate__animated animate__bounceInLeft animate__delay-1s mt-[150px]">
+                <div class="whitespace-nowrap mb-[50px] flex justify-start items-end flex-row leading-[0px]">
+                  <p class="font-applesd text-[#FA2B2B] text-[80px] font-light pb-[8px] mr-[20px]">01</p>
+                  <p class="font-applesd text-white text-[30px] font-light tracking-tighter mt-[20px]">컨설팅 및 솔루션</p>
+                </div>
+                <p class="text-white text-[18px] leading-10 whitespace-nowrap">
+                  하나를 말씀하시면 열을 아는 로동. <br>
+                  대표님들의 상상을 현실로 만들어드립니다. <br> 
+                  완성도 높은 컨설팅, 완벽한 솔루션으로 증명합니다. <br>
+                </p>
               </div>
-              <p class="text-white text-[18px] leading-10 whitespace-nowrap">
-                노련한 경험 위에 쌓는 혁신적인 기획. <br>
-                효율적인 어플리케이션 구동을 위해 빈틈 없는 <br> 
-                기획 단계를 포함합니다. <br>
-              </p>
             </div>
-          </div>
   
-          
-        </div>
-      </section>
-
-      <!-- 03 -->
-      <section class="h-[746px] mb-[446px]">
-        <div class="h-[746px] w-full text-white flex justify-end items-end">
-          <!-- text -->
-          <div class="pl-[2rem] lg:pl-[90px] pr-[100px] h-[746px]">
-            <div class="mt-[150px]">
-              <div class="whitespace-nowrap mb-[50px] flex justify-start items-end flex-row leading-[0px]">
-                <p class="font-applesd text-[#FA2B2B] text-[80px] font-light pb-[8px] mr-[20px]">03</p>
-                <p class="font-applesd text-white text-[30px] font-light tracking-tighter mt-[20px]">디자인</p>
+            <!-- img -->
+            <div class="animate__animated animate__bounceInRight animate__delay-1s flex justify-end items-end h-[746px] w-[1325px]">
+              <div class="w-full h-full flex justify-start items-start overflow-hidden rounded-tl-[50px] lg:rounded-tl-[100px]">
+                <img src="./assets/images/img/wework/01.jpg" class="object-cover w-full h-full" alt="image01">
               </div>
-              <p class="text-white text-[18px] leading-10 whitespace-nowrap">
-                심플함과 화려함의 밸런스. 최고의 전문 디자이너와 함께 <br>
-                작업의 고급스러운 영혼을 부여합니다. <br> 
-              </p>
             </div>
           </div>
-
-          <!-- img -->
-          <div class="flex justify-end items-end h-[746px] w-[1325px]">
-            <div class="w-full h-full flex justify-start items-start overflow-hidden rounded-tl-[50px] lg:rounded-tl-[100px]">
-              <img src="./assets/img/src/landingpage/03.jpg" class="object-cover w-full h-full" alt="image03">
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 04 -->
-      <section class="h-[746px] mb-[446px]">
-        <div class="h-[746px] w-full text-white flex justify-start items-start">
+        </section>
   
-          <!-- img -->
-          <div class="flex justify-end items-end h-[746px] w-[1325px]">
-            <div class="w-full h-full flex justify-start items-start overflow-hidden rounded-tr-[50px] lg:rounded-tr-[100px]">
-              <img src="./assets/img/src/landingpage/04.jpg" class="object-cover w-full h-full" alt="image04">
-            </div>
-          </div>
-  
-          <!-- text -->
-          <div class="h-[746px] ">
-            <div class="mt-[150px] ml-[72px]">
-              <div class="whitespace-nowrap mb-[50px] flex justify-start items-end flex-row leading-[0px]">
-                <p class="font-applesd text-[#FA2B2B] text-[80px] font-light pb-[8px] mr-[20px]">04</p>
-                <p class="font-applesd text-white text-[30px] font-light tracking-tighter mt-[20px]">개발</p>
+        <!-- 02 -->
+        <section id="section02" class="opacity-0 h-[746px] mb-[446px]">
+          <div class="h-[746px] w-full text-white flex justify-start items-start">
+    
+            <!-- img -->
+            <div class="left flex justify-end items-end h-[746px] w-[1325px]">
+              <div class="w-full h-full flex justify-start items-start overflow-hidden rounded-tr-[50px] lg:rounded-tr-[100px]">
+                <img src="./assets/images/img/wework/02.jpg" class="object-cover  w-full h-full" alt="image02">
               </div>
-              <p class="text-white text-[18px] leading-10 whitespace-nowrap">
-                몇 수 앞을 더 내다보는 로동. <br>
-                단순 구동이 아닌 향후 보수 및 추가 기능까지 고려한  <br> 
-                개발을 진행합니다. <br>
-              </p>
             </div>
-          </div>
-  
-          
-        </div>
-      </section>
-
-      <!-- 05 -->
-      <section class="h-[746px] mb-[446px]">
-        <div class="h-[746px] w-full text-white flex justify-end items-end">
-          <!-- text -->
-          <div class="pl-[2rem] lg:pl-[90px] pr-[100px] h-[746px]">
-            <div class="mt-[150px]">
-              <div class="whitespace-nowrap mb-[50px] flex justify-start items-end flex-row leading-[0px]">
-                <p class="font-applesd text-[#FA2B2B] text-[80px] font-light pb-[8px] mr-[20px]">05</p>
-                <p class="font-applesd text-white text-[30px] font-light tracking-tighter mt-[20px]">테스트</p>
+    
+            <!-- text -->
+            <div class="right  h-[746px] ">
+              <div class="mt-[150px] ml-[72px]">
+                <div class="whitespace-nowrap mb-[50px] flex justify-start items-end flex-row leading-[0px]">
+                  <p class="font-applesd text-[#FA2B2B] text-[80px] font-light pb-[8px] mr-[20px]">02</p>
+                  <p class="font-applesd text-white text-[30px] font-light tracking-tighter mt-[20px]">기획</p>
+                </div>
+                <p class="text-white text-[18px] leading-10 whitespace-nowrap">
+                  노련한 경험 위에 쌓는 혁신적인 기획. <br>
+                  효율적인 어플리케이션 구동을 위해 빈틈 없는 <br> 
+                  기획 단계를 포함합니다. <br>
+                </p>
               </div>
-              <p class="text-white text-[18px] leading-10 whitespace-nowrap">
-                완벽의, 완벽을 위한, 완벽에 의한 개발. <br>
-                아주 사소한 문제도 절대 용납하지 않습니다. <br> 
-              </p>
             </div>
+    
+            
           </div>
-
-          <!-- img -->
-          <div class="flex justify-end items-end h-[746px] w-[1325px]">
-            <div class="w-full h-full flex justify-start items-start overflow-hidden rounded-tl-[50px] lg:rounded-tl-[100px]">
-              <img src="./assets/img/src/landingpage/05.jpg" class="object-cover  w-full h-full" alt="image05">
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 06 -->
-      <section class="h-[746px] mb-[446px]">
-        <div class="h-[746px] w-full text-white flex justify-start items-start">
+        </section>
   
-          <!-- img -->
-          <div class="flex justify-end items-end h-[746px] w-[1325px]">
-            <div class="w-full h-full flex justify-start items-start overflow-hidden rounded-tr-[50px] lg:rounded-tr-[100px]">
-              <img src="./assets/img/src/landingpage/06.jpg" class="object-cover  w-full h-full" alt="image06">
-            </div>
-          </div>
-  
-          <!-- text -->
-          <div class="h-[746px] ">
-            <div class="mt-[150px] ml-[72px]">
-              <div class="whitespace-nowrap mb-[50px] flex justify-start items-end flex-row leading-[0px]">
-                <p class="font-applesd text-[#FA2B2B] text-[80px] font-light pb-[8px] mr-[20px]">06</p>
-                <p class="font-applesd text-white text-[30px] font-light tracking-tighter mt-[20px]">퍼블리싱</p>
+        <!-- 03 -->
+        <section id="section03" class="opacity-0 sh-[746px] mb-[446px]">
+          <div class="h-[746px] w-full text-white flex justify-end items-end">
+            <!-- text -->
+            <div class="left pl-[2rem] lg:pl-[90px] pr-[100px] h-[746px]">
+              <div class="mt-[150px]">
+                <div class="whitespace-nowrap mb-[50px] flex justify-start items-end flex-row leading-[0px]">
+                  <p class="font-applesd text-[#FA2B2B] text-[80px] font-light pb-[8px] mr-[20px]">03</p>
+                  <p class="font-applesd text-white text-[30px] font-light tracking-tighter mt-[20px]">디자인</p>
+                </div>
+                <p class="text-white text-[18px] leading-10 whitespace-nowrap">
+                  심플함과 화려함의 밸런스. 최고의 전문 디자이너와 함께 <br>
+                  작업의 고급스러운 영혼을 부여합니다. <br> 
+                </p>
               </div>
-              <p class="text-white text-[18px] leading-10 whitespace-nowrap">
-                A to Z with 로동. <br>
-                빈틈없는 정책 검토와 퍼블리싱까지 대행해 드립니다.  <br> 
-              </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 07 -->
-      <section class="h-[746px] mb-[446px]">
-        <div class="h-[746px] w-full text-white flex justify-end items-end">
-          <!-- text -->
-          <div class="pl-[2rem] lg:pl-[90px] pr-[100px] h-[746px]">
-            <div class="mt-[150px]">
-              <div class="whitespace-nowrap mb-[50px] flex justify-start items-end flex-row leading-[0px]">
-                <p class="font-applesd text-[#FA2B2B] text-[80px] font-light pb-[8px] mr-[20px]">07</p>
-                <p class="font-applesd text-white text-[30px] font-light tracking-tighter mt-[20px]">작업완료</p>
-              </div>
-              <p class="text-white text-[18px] leading-10 whitespace-nowrap">
-                완료 보고 및 개발 자료 반환과 폐기 후 개발 소스까지 <br>
-                전달해 드린 후 마무리합니다. <br> 
-              </p>
-            </div>
-          </div>
-
-          <!-- img -->
-          <div class="flex justify-end items-end h-[746px] w-[1325px]">
-            <div class="w-full h-full flex justify-start items-start overflow-hidden rounded-tl-[50px] lg:rounded-tl-[100px]">
-              <img src="./assets/img/src/landingpage/07.jpg" class="object-cover  w-full h-full" alt="image07">
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- 08 -->
-      <section class="h-[746px] mb-[280px]">
-        <div class="h-[746px] w-full text-white flex justify-start items-start">
   
-          <!-- img -->
-          <div class="flex justify-end items-end h-[746px] w-[1325px]">
-            <div class="w-full h-full flex justify-start items-start overflow-hidden rounded-tr-[50px] lg:rounded-tr-[100px]">
-              <img src="./assets/img/src/landingpage/08.jpg" class="object-cover  w-full h-full" alt="image08">
-            </div>
-          </div>
-  
-          <!-- text -->
-          <div class="h-[746px] ">
-            <div class="mt-[150px] ml-[72px]">
-              <div class="whitespace-nowrap mb-[50px] flex justify-start items-end flex-row leading-[0px]">
-                <p class="font-applesd text-[#FA2B2B] text-[80px] font-light pb-[8px] mr-[20px]">08</p>
-                <p class="font-applesd text-white text-[30px] font-light tracking-tighter mt-[20px]">유지보수</p>
+            <!-- img -->
+            <div class="right flex justify-end items-end h-[746px] w-[1325px]">
+              <div class="w-full h-full flex justify-start items-start overflow-hidden rounded-tl-[50px] lg:rounded-tl-[100px]">
+                <img src="./assets/images/img/wework/03.jpg" class="object-cover w-full h-full" alt="image03">
               </div>
-              <p class="text-white text-[18px] leading-10 whitespace-nowrap">
-                대표님과 저희의 인연은 끝까지 !  작업이 완료 되었어도  <br>
-                지속적인 모니터링과 추가 AS로 절대적인 만족을 보장합니다. <br> 
-              </p>
             </div>
           </div>
-        </div>
-      </section>
-    </main>
+        </section>
+  
+        <!-- 04 -->
+        <section id="section04" class="opacity-0 h-[746px] mb-[446px]">
+          <div class="h-[746px] w-full text-white flex justify-start items-start">
+    
+            <!-- img -->
+            <div class="left flex justify-end items-end h-[746px] w-[1325px]">
+              <div class="w-full h-full flex justify-start items-start overflow-hidden rounded-tr-[50px] lg:rounded-tr-[100px]">
+                <img src="./assets/images/img/wework/04.jpg" class="object-cover w-full h-full" alt="image04">
+              </div>
+            </div>
+    
+            <!-- text -->
+            <div class="right h-[746px] ">
+              <div class="mt-[150px] ml-[72px]">
+                <div class="whitespace-nowrap mb-[50px] flex justify-start items-end flex-row leading-[0px]">
+                  <p class="font-applesd text-[#FA2B2B] text-[80px] font-light pb-[8px] mr-[20px]">04</p>
+                  <p class="font-applesd text-white text-[30px] font-light tracking-tighter mt-[20px]">개발</p>
+                </div>
+                <p class="text-white text-[18px] leading-10 whitespace-nowrap">
+                  몇 수 앞을 더 내다보는 로동. <br>
+                  단순 구동이 아닌 향후 보수 및 추가 기능까지 고려한  <br> 
+                  개발을 진행합니다. <br>
+                </p>
+              </div>
+            </div>
+    
+            
+          </div>
+        </section>
+  
+        <!-- 05 -->
+        <section id="section05" class="opacity-0 h-[746px] mb-[446px]">
+          <div class="h-[746px] w-full text-white flex justify-end items-end">
+            <!-- text -->
+            <div class="left pl-[2rem] lg:pl-[90px] pr-[100px] h-[746px]">
+              <div class="mt-[150px]">
+                <div class="whitespace-nowrap mb-[50px] flex justify-start items-end flex-row leading-[0px]">
+                  <p class="font-applesd text-[#FA2B2B] text-[80px] font-light pb-[8px] mr-[20px]">05</p>
+                  <p class="font-applesd text-white text-[30px] font-light tracking-tighter mt-[20px]">테스트</p>
+                </div>
+                <p class="text-white text-[18px] leading-10 whitespace-nowrap">
+                  완벽의, 완벽을 위한, 완벽에 의한 개발. <br>
+                  아주 사소한 문제도 절대 용납하지 않습니다. <br> 
+                </p>
+              </div>
+            </div>
+  
+            <!-- img -->
+            <div class="right flex justify-end items-end h-[746px] w-[1325px]">
+              <div class="w-full h-full flex justify-start items-start overflow-hidden rounded-tl-[50px] lg:rounded-tl-[100px]">
+                <img src="./assets/images/img/wework/05.jpg" class="object-cover  w-full h-full" alt="image05">
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <!-- 06 -->
+        <section id="section06" class="opacity-0 h-[746px] mb-[446px]">
+          <div class="h-[746px] w-full text-white flex justify-start items-start">
+    
+            <!-- img -->
+            <div class="left flex justify-end items-end h-[746px] w-[1325px]">
+              <div class="w-full h-full flex justify-start items-start overflow-hidden rounded-tr-[50px] lg:rounded-tr-[100px]">
+                <img src="./assets/images/img/wework/06.jpg" class="object-cover  w-full h-full" alt="image06">
+              </div>
+            </div>
+    
+            <!-- text -->
+            <div class="right h-[746px] ">
+              <div class="mt-[150px] ml-[72px]">
+                <div class="whitespace-nowrap mb-[50px] flex justify-start items-end flex-row leading-[0px]">
+                  <p class="font-applesd text-[#FA2B2B] text-[80px] font-light pb-[8px] mr-[20px]">06</p>
+                  <p class="font-applesd text-white text-[30px] font-light tracking-tighter mt-[20px]">퍼블리싱</p>
+                </div>
+                <p class="text-white text-[18px] leading-10 whitespace-nowrap">
+                  A to Z with 로동. <br>
+                  빈틈없는 정책 검토와 퍼블리싱까지 대행해 드립니다.  <br> 
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <!-- 07 -->
+        <section id="section07" class="opacity-0 h-[746px] mb-[446px]">
+          <div class="h-[746px] w-full text-white flex justify-end items-end">
+            <!-- text -->
+            <div class="left pl-[2rem] lg:pl-[90px] pr-[100px] h-[746px]">
+              <div class="mt-[150px]">
+                <div class="whitespace-nowrap mb-[50px] flex justify-start items-end flex-row leading-[0px]">
+                  <p class="font-applesd text-[#FA2B2B] text-[80px] font-light pb-[8px] mr-[20px]">07</p>
+                  <p class="font-applesd text-white text-[30px] font-light tracking-tighter mt-[20px]">작업완료</p>
+                </div>
+                <p class="text-white text-[18px] leading-10 whitespace-nowrap">
+                  완료 보고 및 개발 자료 반환과 폐기 후 개발 소스까지 <br>
+                  전달해 드린 후 마무리합니다. <br> 
+                </p>
+              </div>
+            </div>
+  
+            <!-- img -->
+            <div class="right flex justify-end items-end h-[746px] w-[1325px]">
+              <div class="w-full h-full flex justify-start items-start overflow-hidden rounded-tl-[50px] lg:rounded-tl-[100px]">
+                <img src="./assets/images/img/wework/07.jpg" class="object-cover  w-full h-full" alt="image07">
+              </div>
+            </div>
+          </div>
+        </section>
+  
+        <!-- 08 -->
+        <section id="section08" class="opacity-0 h-[746px] mb-[280px]">
+          <div class="h-[746px] w-full text-white flex justify-start items-start">
+    
+            <!-- img -->
+            <div class="left flex justify-end items-end h-[746px] w-[1325px]">
+              <div class="w-full h-full flex justify-start items-start overflow-hidden rounded-tr-[50px] lg:rounded-tr-[100px]">
+                <img src="./assets/images/img/wework/08.jpg" class="object-cover  w-full h-full" alt="image08">
+              </div>
+            </div>
+    
+            <!-- text -->
+            <div class="right h-[746px] ">
+              <div class="mt-[150px] ml-[72px]">
+                <div class="whitespace-nowrap mb-[50px] flex justify-start items-end flex-row leading-[0px]">
+                  <p class="font-applesd text-[#FA2B2B] text-[80px] font-light pb-[8px] mr-[20px]">08</p>
+                  <p class="font-applesd text-white text-[30px] font-light tracking-tighter mt-[20px]">유지보수</p>
+                </div>
+                <p class="text-white text-[18px] leading-10 whitespace-nowrap">
+                  대표님과 저희의 인연은 끝까지 !  작업이 완료 되었어도  <br>
+                  지속적인 모니터링과 추가 AS로 절대적인 만족을 보장합니다. <br> 
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      
+    </div>
 
-    <footer class="w-full bg-white h-[210px] flex justify-between items-center flex-row px-[90px]">
+    <footer class="w-full bg-white flex justify-between items-center flex-row px-[90px] py-[50px]">
       <!-- left -->
-      <div class="flex justify-start items-center flex-row ">
+      <div class="grow flex justify-start items-center flex-row ">
         <!-- logo -->
-        <a href="./index.html" class="h-[76px] mr-[100px]">
-          <img src="./assets/img/logo/lodong-brand.png" alt="lodong logo" class="h-[65px]">
+        <a href="./index.html" class="min-w-[76px] mr-[100px]">
+          <img src="./assets/images/logo/lodong-brand.png" alt="lodong logo" class="h-[65px]">
         </a>
 
         <!-- details -->
@@ -326,19 +592,19 @@
           </p>
 
           <!-- address -->
-          <p class="whitespace-nowrap">
+          <p class="">
             <span class="font-bold whitespace-nowrap">사업장 소재지 :</span>
-            <span class="whitespace-nowrap">경기도 안양시 만안구 덕천로 152번길 25 아이에스비즈타워 B동 1506호</span>
+            <span class="">경기도 안양시 만안구 덕천로 152번길 25 아이에스비즈타워 B동 1506호</span>
           </p>
 
           <!-- contacts -->
-          <p class="">
+          <p class="flex justify-start items-center flex-row flex-wrap gap-x-[30px]">
             <span class="whitespace-nowrap">
               <span class="font-bold">TEL : </span>
               <span class="whitespace-nowrap">010-6575-1161 / 031-444-1161</span>
             </span>
 
-            <span class="mx-[40px] whitespace-nowrap">
+            <span class="whitespace-nowrap">
               <span class="font-bold">FAX : </span>
               <span class="whitespace-nowrap">031-460-8553</span>
             </span>
@@ -353,19 +619,19 @@
       </div>
 
       <!-- right/socials -->
-      <div class="flex justify-start items-start flex-col gap-[30px] ">
+      <div class="ml-[30px] flex justify-start items-start flex-col gap-[30px] ">
         <div class="flex justify-start items-center flex-row gap-[30px]">
-          <a href="#" class="h-[50px]">
-            <img src="./assets/img/icon/facebook.png" alt="facebook" class="h-[50px]">
+          <a href="#" class="min-h-[50px] min-w-[50px]">
+            <img src="./assets/images/icon/facebook.png" alt="facebook" >
           </a>
-          <a href="#" class="">
-            <img src="./assets/img/icon/instagram.png" alt="instagram" class="h-[50px]">
+          <a href="#" class="min-h-[50px] min-w-[50px]">
+            <img src="./assets/images/icon/instagram.png" alt="instagram" >
           </a>
-          <a href="#" class="">
-            <img src="./assets/img/icon/kakaotalk.png" alt="kakaotalk" class="h-[50px]">
+          <a href="#" class="min-h-[50px] min-w-[50px]">
+            <img src="./assets/images/icon/kakaotalk.png" alt="kakaotalk" >
           </a>
-          <a href="#" class="">
-            <img src="./assets/img/icon/slack.png" alt="slack" class="h-[50px]">
+          <a href="#" class="min-h-[50px] min-w-[50px]">
+            <img src="./assets/images/icon/slack.png" alt="slack" >
           </a>
         </div>
 
@@ -379,14 +645,14 @@
 
   </div>
 
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+  <script
+    src = "https://cdn.jsdelivr.net/gh/KodingKhurram/animate.css-dynamic@main/animate.min.js">
+  </script>
   <script src="./assets/vendor/fontawesome/fontawesome.min.js"></script>
   <script src="./assets/js/dom.js"></script>
   <script src="./assets/js/function.js"></script>
-
-
-  <script>
-    const page = 'index.html';
-    openNextPageOnScrollUp(page);
-  </script>
+  <script src="./assets/js/wework.js"></script>
 </body>
 </html>

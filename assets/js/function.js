@@ -1,3 +1,15 @@
+// scroll to Top
+function scrollToTop() {
+    document.addEventListener('DOMContentLoaded', function () {
+        let scrollBtn = document.querySelector("#scrollTop");
+
+        scrollBtn.addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }, false);
+}
+
+
 function openNextPageOnScrollDown(page) {
     // Specify the threshold percentage when to trigger the page transition
     const scrollThreshold = 0.8;
@@ -29,5 +41,4 @@ function openNextPageOnScrollUp(page) {
         isAtTop = window.scrollY === 0;
     });
 }
-
 

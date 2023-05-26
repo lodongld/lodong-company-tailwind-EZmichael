@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favico/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favico/favicon-16x16.png">
+  <link rel="manifest" href="./assets/images/favico/site.webmanifest">
+  <link rel="mask-icon" href="./assets/images/favico/safari-pinned-tab.svg" color="#7b7b7b">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+
+ 
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="./assets/styles/css/main.min.css">
+  <title>Lodong | Home</title>
+</head>
+<body id="mapPage" class="max-h-[100dvh] min-h-[100dvh] h-[100dvh]">
+  <div id="mobileView">
+    <header class="flex justify-between items-center flex-row flex-nowrap px-[25px] py-[15px] shadow-lg">
+        <a href="./contact.html" class="text-[18px]">
+            <i class="fa-solid fa-angle-left text-[18px]"></i>
+            <p></p>
+        </a>
+        <button type="button" class=""><i class="fa-solid fa-times text-[18px]"></i></button>
+    </header>
+
+    <main>
+        <section id="map" style="width:500px;height:400px;">
+
+        </section>
+    </main>
+  </div>
+
+  <div id="desktopView" class="hidden"></div>
+
+  <!-- <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=a793fc181e98f71ca4efa1b281e4f3a0"></script> -->
+  <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.1.0/kakao.min.js" crossorigin="anonymous"></script>
+   <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e51989bf3dcbbb82bf0b41990b750b19&libraries=services,clusterer,drawing"></script>
+  <script src="./assets/vendor/fontawesome/fontawesome.min.js"></script>
+  <script src="./assets/js/function.js"></script>
+  <script>
+    const mapContainer = document.querySelector('#map'), // 지도를 표시할 div 
+        mapOption = { 
+            center: new kakao.maps.LatLng(37.392658806877265, 126.93895103670901), // 지도의 중심좌표
+            level: 3 // 지도의 확대 레벨
+        };
+
+    // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+    const map = new kakao.maps.Map(mapContainer, mapOption); 
+  </script>
+</body>
+</html>

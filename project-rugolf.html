@@ -5,23 +5,267 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favico/">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favico/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favico/favicon-16x16.png">
-  <link rel="manifest" href="./assets/img/favico/site.webmanifest">
-  <link rel="mask-icon" href="./assets/img/favico/safari-pinned-tab.svg" color="#7b7b7b">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favico/">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favico/favicon-16x16.png">
+  <link rel="manifest" href="./assets/images/favico/site.webmanifest">
+  <link rel="mask-icon" href="./assets/images/favico/safari-pinned-tab.svg" color="#7b7b7b">
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="theme-color" content="#ffffff">
 
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
-  <script src="./assets/js/tailwindConfig.js"></script>
-
-  <link rel="stylesheet" href="./assets/style/css/main.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <script src="https://cdn.jsdelivr.net/gh/KodingKhurram/animate.css-dynamic@main/animate.min.js"></script>
+  <link rel="stylesheet" href="./assets/styles/css/main.min.css">
   <title>Lodong | Project - RU GOLF</title>
 </head>
-<body class="overflow-x-hidden">
-  <div id="project" class="w-full bg-black">
+<body id="projectsPage">
+  <div id="mobileView" class="bg-black">
+    <header>
+      <nav class="w-full flex justify-between items-center flex-row flex-nowrap py-[1.5rem] px-[25px]">
+        <a href="./index.html" class="h-[50px] lg:h-[65px]">
+          <img src="./assets/images/logo/lodong-icon.png" alt="lodong logo" class="h-[50px] lg:h-[65px]">
+        </a>
+        <!-- hamburger -->
+        <div id="menuBtn" class="block p-[0.5rem] text-white border-2 border-transparent cursor-pointer hover:border-2 hover:border-black hover:rounded">
+          <i class="fa-solid fa-bars-staggered fa-flip-vertical fa-2xl"></i>
+        </div>
+      </nav>
+    </header>
+
+    <aside id="menuNav" class="fixed top-0 left-0  w-full z-50 bg-neutral-950">
+      <div class="relative h-full w-full flex justify-center items-center flex-col">
+        <div class="flex justify-start items-center flex-col w-full gap-[50px]">
+          <a href="./index.html" class="w-full text-[24px] text-center text-white hover:font-bold">Home</a>
+          <a href="./aboutus.html" class=" w-full text-[24px] text-center text-white hover:font-bold">About Us</a>
+          <a href="./service.html" class="w-full text-[24px] text-center text-white hover:font-bold">Service</a>
+          <a href="./projects.html" class="font-bold w-full text-[24px] text-center text-white hover:font-bold">Projects</a>
+          <a href="./contact.html" class="text-[24px] font-bold text-jungle px-[2rem] py-[0.75rem] mt-[2rem] rounded-full border-2 border-transparent bg-[white] drop-shadow-lg hover:bg-transparent hover:text-[white] hover:border-[white]">Contact</a>
+        </div>
+
+        <div id="menuClose" class="absolute top-[30px] right-[25px] p-[0.75rem] border-2 border-transparent cursor-pointer hover:border-2 hover:border-[#FA2B2B] hover:rounded-full">
+          <i class="fa-solid fa-times fa-2xl text-carmine"></i>
+        </div>
+      </div>
+    </aside>
+
+    <main class="mb-[200px]">
+      <section class="w-full mt-[30px]">
+        <div class="px-[25px] flex justify-start items-center flex-row gap-x-[20px] text-white">
+          <a href="./projects.html" class="flex justify-start items-center flex-row">
+            <i class="fa-regular fa-arrow-left text-[26px]"></i>
+            <span class="tracking-tight leading-normal text-[16px] font-bold ml-[20px]">Projects</span>
+          </a>
+          <i class="fa-regular fa-angle-right text-[12px] opacity-60"></i>
+          <h1 class="tracking-tight leading-normal text-[16px]  opacity-60">RUGOLF</h1>
+        </div>
+
+        <div class="w-full my-[50px] border border-transparent">
+          <img src="./assets/images/img/projects/rugolf/rugolf-main-mobile.png" alt="rugolf" class="w-full ">
+        </div>
+
+        <div class="w-full text-center mt-[85px] border border-transparent mb-[150px]">
+          <p class="text-[#33F580] text-[15px] tracking-tight">스크린 골프 예약 시스템</p>
+          <h1 class="text-[45px] font-bold text-white">RUGOLF</h1>
+        </div>
+
+        <div class="w-full px-[50px] text-center mb-[150px]">
+          <div class="w-full flex justify-center items-middle flex-row flex-wrap gap-[20px]">
+            <p class="text-white tracking-tight text-[17px]">
+              <span class="font-bold mr-[20px]">Client</span>
+              <span class="opacity-60">RUGOLF</span>
+            </p>
+
+            <p class="text-white tracking-tight text-[17px]">
+              <span class="font-bold mr-[20px]">Project Year</span>
+              <span class="opacity-60">2022</span>
+            </p>
+
+            <p class="text-white tracking-tight text-[17px]">
+              <span class="font-bold mr-[20px]">Duration</span>
+              <span class="opacity-60">6개월 소요</span>
+            </p>
+
+            <p class="text-white tracking-tight text-[17px]">
+              <span class="font-bold mr-[20px]">Type of service</span>
+              <span class="opacity-60">Android app / Web</span>
+            </p>
+
+          </div>
+        </div>
+      </section>
+
+
+      <section class="w-full mt-[200px]">
+        <div class="w-full flex justify-center text-center">
+          <img src="./assets/images/img/projects/rugolf/01-mobile.png" alt="rugolf" class="w-full">
+        </div>
+
+        <div class="mt-[30px] w-full px-[25px] tracking-tight leading-loose text-white font-applesd font-medium opacity-60 text-[18px]">
+          <p>
+            <span>스크린 골프 아카데미로 당일예약을 원칙으로 타석별,</span> <br>
+            <span>강사별로 예약할 수 있는 서비스입니다. </span> <br>
+          </p>
+          <p class="mt-[30px]">
+            <span>사용자가 원하는 시간에 예약하면 관리자용 웹으로 소</span> <br>
+            <span>리와 함께 알림이 떠 바로 확인이 가능합니다.</span> <br>
+            <br> <br>
+          </p>
+        </div>
+
+        <div class="w-full flex justify-center text-center mt-[150px]">
+          <img src="./assets/images/img/projects/rugolf/02-mobile.png" alt="rugolf" class="w-full">
+        </div>
+
+        <div class="mt-[50px] w-full px-[25px] tracking-tight leading-loose text-white font-applesd font-medium opacity-60 text-[18px]">
+          <p>
+            <span>내정보에서 예약목록들을 확인하고 레슨과 예약을 관리</span> <br>
+            <span>해보세요.</span> <br>
+          </p>
+        </div>
+
+
+        <div class="w-full flex justify-end text-center mt-[150px]">
+          <img src="./assets/images/img/projects/rugolf/03-mobile.png" alt="rugolf" class="w-3/5">
+        </div>
+
+        <div class="w-full flex justify-start text-center mt-[150px] ml-[-50px]">
+          <img src="./assets/images/img/projects/rugolf/03.png" alt="rugolf" class="w-full">
+        </div>
+
+        <div class="mt-[30px] w-full px-[25px] tracking-tight leading-loose text-white font-applesd font-medium opacity-60 text-[18px]">
+          <p class="text-center">
+            <span>다양한 강사들에게 레슨을 예약할 수 있습니다.</span> <br>
+          </p>
+        </div>
+
+        <div class="w-full mt-[150px]">
+          <h1 class="px-[25px] font-applesd text-[30px] text-white"> WEB </h1>
+
+          <div class="w-full flex justify-center text-center mt-[80px] px-[25px]">
+            <img src="./assets/images/img/projects/rugolf/05.png" alt="rugolf" class="w-full">
+          </div>
+
+          <h1 class="px-[25px] font-applesd text-[30px] text-white mt-[100px]"> 설계 </h1>
+          <div class="mt-[30px] w-full px-[25px] tracking-tight leading-loose text-white font-applesd font-medium opacity-60 text-[18px]">
+            <p>
+              <span>예약정보를 웹사트로 불러와 알림이 울리고 카테고리 </span> <br>
+              <span>별로 예약현황을 알 수 있습니다.</span> <br>
+            </p>
+          </div>
+        </div>
+
+        <div class="w-full mt-[250px]">
+          <div class="w-full flex justify-start text-center mt-[20px]">
+            <img src="./assets/images/img/projects/rugolf/06-mobile.png" alt="rugolf" class="w-full">
+          </div>
+        </div>
+
+        <div class="mt-[80px] w-full px-[25px] tracking-tight leading-loose text-white font-applesd font-medium text-[18px]">
+          <h1 class="font-applesd text-[30px] text-white"> 상호작용하는 웹/앱 </h1>
+
+          <p class="opacity-60 mt-[30px]">
+            <span>앱에서 예약한 정보를 통해 웹에 알림이 뜹니다.</span> <br>
+            <span>웹에서 예약 관리도 함께 할 수 있습니다.</span> <br>
+          </p>
+        </div>
+
+
+        <div class="w-full mt-[250px]">
+          <div class="w-full flex justify-start text-center mt-[20px]">
+            <img src="./assets/images/img/projects/rugolf/07-mobile.png" alt="rugolf" class="w-full">
+          </div>
+        </div>
+
+        <div class="mt-[50px] w-full px-[25px] tracking-tight leading-loose text-white font-applesd font-medium text-[18px]">
+          <p class="opacity-60 mt-[30px]">
+            <span>타석, 시간별로 어떤 고객이 예약했는지 <span class="font-bold">정리 해</span></span> <br>
+            <span><span class="font-bold">주는</span>페이지를 구현했습니다.</span> <br>
+          </p>
+        </div>
+      </section>
+    </main>
+
+
+    <div class="w-full text-center flex justify-center items-start mb-[100px]">
+      <button type="button" id="scrollTop" class="rotate-180">
+        <img src="./assets/images/icon/caretDownLight.png" alt="arrowUp" class="fa-bounce height-[50px]">
+      </button>
+    </div>
+
+    <footer class="pt-[50px] pb-[25px] bg-white px-[25px]">
+      <div class="w-full flex justify-between align-start flex-row flex-nowrap mb-[20px]">
+        <div class="grow flex justify-center align-start flex-col">
+
+          <div class="leading-[32px] tracking-tighter text-[16px] text-jungle">
+            <p class="whitespace-nowrap">
+              <span class="whitespace-nowrap">
+                <span>상호 :</span>
+                <span class="opacity-60">로동</span>
+              </span>
+
+              <span class="ml-[20px]">
+                <span>대표 :</span>
+                <span class="opacity-60">조이준</span>
+              </span>
+            </p>
+
+            <p class="whitespace-nowrap">
+              <span>사업자등록번호 :</span>
+              <span class="opacity-60">511-53-00073</span>
+            </p>
+
+            <p>
+              <span>소재지 : </span>
+              <span class="opacity-60">경기도 안양시 만안구 덕천로 152번길 25 아이에스비즈타워 B동 1506호 </span>
+            </p>
+          </div>
+
+          <div class="mt-[30px] leading-[32px] tracking-tighter text-[16px] text-jungle">
+            <p class="whitespace-nowrap">
+              <span>TEL :</span>
+              <span class="opacity-60">010-6575-1161 / 031-444-1161</span>
+            </p>
+
+            <p class="whitespace-nowrap">
+              <span>FAX :</span>
+              <span class="opacity-60">031-460-8553</span>
+            </p>
+
+            <p class="whitespace-nowrap">
+              <span>Email :</span>
+              <span class="opacity-60">cyj@lodong.co.kr</span>
+            </p>
+          </div>
+        </div>
+
+
+        <div class="ml-[20px] flex justify-center align-center flex-col gap-5">
+          <a href="#" class="w-full flex justify-center min-h-[45px] min-w-[45px]">
+            <img src="./assets/images/icon/facebook.png" class="" alt="facebook">
+          </a>
+
+          <a href="#" class="w-full flex justify-center min-h-[45px] min-w-[45px]">
+            <img src="./assets/images/icon/instagram.png" class="" alt="instagram">
+          </a>
+
+          <a href="#" class="w-full flex justify-center min-h-[45px] min-w-[45px]">
+            <img src="./assets/images/icon/kakaotalk.png" class="" alt="kakaotalk">
+          </a>
+
+          <a href="#" class="w-full flex justify-center min-h-[45px] min-w-[45px]">
+            <img src="./assets/images/icon/slack.png" class="" alt="slack">
+          </a>
+        </div>
+
+      </div>
+
+      <p class="mt-[50px] text-jungle opacity-50 text-center text-[13px] font-applesd">Copyright ⓒ 2023 Lodong Co., Ltd. All Rights Reserved.</p>
+
+    </footer>
+  </div>
+
+  <div id="desktopView">
     <!-- desktop view -->
     <header class="sticky top-0 left-0 bg-black z-40">
       <nav class="flex justify-between items-center flex-row flex-nowrap py-[1.5rem] px-[2rem] lg:px-[90px]">
@@ -40,44 +284,22 @@
             <a href="./aboutus.html" class="text-lg text-[#8C8C8C]  px-[0.5rem] lg:px-[1rem] hover:font-bold hover:text-white">About Us</a>
             <a href="./service.html" class="text-lg text-[#8C8C8C] px-[0.5rem] lg:px-[1rem] hover:font-bold hover:text-white">Service</a>
             <a href="./projects.html" class="text-lg text-white font-bold px-[0.5rem] lg:px-[1rem] hover:font-bold hover:text-white">Projects</a>
-            <a href="./news.html" class="text-lg text-[#8C8C8C] px-[0.5rem] lg:px-[1rem] hover:font-bold hover:text-white">News</a>
-            <a href="./careers.html" class="text-lg text-[#8C8C8C] px-[0.5rem] lg:px-[1rem] hover:font-bold hover:text-white">Careers</a>
             <a href="./contact.html" class="text-lg text-[#2B2A2A] font-medium px-[2rem] py-[0.5rem] ml-[0.75rem] lg:ml-[1rem] rounded-full bg-white drop-shadow-lg border-2 hover:bg-transparent hover:border-white hover:text-white">Contact</a>
           </div>
         </div>
       </nav>
     </header>
 
-    <!-- mobile view navlists [toggle hidden block]--> 
-    <aside class="hidden md:hidden absolute w-4/5 z-50 bg-neutral-950 h-full left-0 top-0">
-      <div class="h-screen flex justify-start items-center flex-col">
-        <div class="bg-opacity-5 bg-white h-auto w-full py-[1.5rem] flex justify-center items-center">
-          <a href="./index.html" class="">
-            <img src="./assets/img/logo/lodong-icon.png" alt="lodong logo" class="h-[50px] lg:h-[65px]">
-          </a>
-        </div>
-        <div class="flex justify-start items-center flex-col w-full">
-            <a href="./index.html" class="w-full text-center text-lg text-white py-[1rem] hover:font-bold">Home</a>
-            <a href="./aboutus.html" class="w-full text-center text-lg text-white py-[1rem] hover:font-bold">About Us</a>
-            <a href="./service.html" class="w-full text-center text-lg text-white py-[1rem] hover:font-bold">Service</a>
-            <a href="./projects.html" class="w-full text-center text-lg text-white font-bold py-[1rem] hover:font-bold">Projects</a>
-            <a href="./news.html" class="w-full text-center text-lg text-white py-[1rem] hover:font-bold">News</a>
-            <a href="./careers.html" class="w-full text-center text-lg text-white py-[1rem] hover:font-bold">Careers</a>
-            <a href="./contact.html" class="text-lg text-white px-[2rem] py-[0.75rem] mt-[1rem] rounded-full border-2 border-transparent bg-[#242424] text-white drop-shadow-lg hover:bg-transparent hover:border-[#242424]">Contact</a>
-          </div>
-      </div>
-    </aside>
-
     <!-- content -->
     <main class="min-h-[calc(100vh_-_113px)]">
       <section class="w-full min-h-[calc(100vh_-_113px)] flex justify-start items-center flex-row px-[90px]">
         <!-- image -->
-        <div class="w-[945px]  h-[calc(100vh_-_113px)] flex justify-center items-center">
-          <img src="./assets/img/src/projects/p02.png" alt="" class="object-contain">
+        <div class="animate__animated animate__slideInLeft w-[945px]  h-[calc(100vh_-_113px)] flex justify-center items-center">
+          <img src="./assets/images/img/projects/rugolf/rugolf-main.png" alt="rugolf" class="object-contain">
         </div>
 
         <!-- text -->
-        <div class="">
+        <div class="animate__animated animate__slideInRight">
           <!-- breadcrumb -->
           <div class="flex justify-start items-center text-white font-semibold text-[16px]">
             <p class="opacity-60 font-semibold"> Projects </p>
@@ -94,7 +316,7 @@
           </p>
 
           <!-- hover:bg-white hover:text-black hover:font-bold -->
-          <a href="./rugolf-details.html" class="text-white text-[16px] px-[2.75rem] py-[0.85rem] bg-transparent rounded-full border-2 border-white hover:bg-white hover:text-black hover:font-bold">
+          <a href="./details-rugolf.html" class="text-white text-[16px] px-[2.75rem] py-[0.85rem] bg-transparent rounded-full border-2 border-white hover:bg-white hover:text-black hover:font-bold">
             <i class="fa-solid fa-plus"></i>
             <span class="ml-[10px] font-bold"> 더 보기 </span>
           </a>
@@ -137,7 +359,7 @@
         </div>
 
         <!-- dots -->
-        <div class="grow h-[calc(100vh_-_113px)] flex justify-end item-center">
+        <div class="animate__animated animate__slideInUp grow h-[calc(100vh_-_113px)] flex justify-end item-center">
           <div class="flex justify-center item-center flex-col gap-y-[15px]">
             <div class="h-[10px] w-[10px] rounded-full bg-white bg-opacity-20"></div>
             <div class="h-[10px] w-[10px] rounded-full bg-white "></div>
@@ -158,10 +380,12 @@
   <script src="./assets/vendor/fontawesome/fontawesome.min.js"></script>
   <script src="./assets/js/dom.js"></script>
   <script src="./assets/js/function.js"></script>
-
   <script>
-    const page = './rugolf-details.html';
-    openNextPageOnScrollDown(page);
+    scrollToTop();
+    if(window.innerWidth > 1025) {
+      const page = './details-rugolf.html';
+      openNextPageOnScrollDown(page);
+    }
   </script>
 </body>
 </html>

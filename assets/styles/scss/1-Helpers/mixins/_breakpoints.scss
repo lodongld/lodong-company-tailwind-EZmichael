@@ -1,0 +1,114 @@
+@mixin breakpoint-xl4 {
+
+    //2560px -> down
+    @media (max-width: $xl4) {
+        @content;
+    }
+}
+
+@mixin breakpoint-xl3 {
+
+    //1920px -> down
+    @media (max-width: $xl3) {
+        @content;
+    }
+}
+
+@mixin breakpoint-xl2 {
+
+    //1536px -> down
+    @media (max-width: $xl2) {
+        @content;
+    }
+}
+
+@mixin breakpoint-xl {
+
+    //1280px -> down
+    @media (max-width: $xl) {
+        @content;
+    }
+}
+
+@mixin breakpoint-lg {
+
+    //1024px -> down
+    @media (max-width: $lg) {
+        @content;
+    }
+}
+
+@mixin breakpoint-md {
+
+    //768px -> down
+    @media (max-width: $md) {
+        @content;
+    }
+}
+
+@mixin breakpoint-sm {
+
+    //430px ->down
+    @media (max-width: $sm) {
+        @content;
+    }
+}
+
+
+
+
+@mixin breakpoint-xl4-up {
+
+    //2561px -> up
+    @media (min-width: $xl4-up) {
+        @content;
+    }
+}
+
+@mixin breakpoint-xl3-up {
+
+    //1921px -> up
+    @media (min-width: $xl3-up) {
+        @content;
+    }
+}
+
+@mixin breakpoint-xl2-up {
+
+    //1537px -> up
+    @media (min-width: $xl2-up) {
+        @content;
+    }
+}
+
+@mixin breakpoint-xl-up {
+
+    //1281px -> up
+    @media (min-width: $xl-up) {
+        @content;
+    }
+}
+
+@mixin breakpoint-lg-up {
+
+    //1025px -> up
+    @media (min-width: $lg-up) {
+        @content;
+    }
+}
+
+@mixin breakpoint-md-up {
+
+    //769px -> up
+    @media (min-width: $md-up) {
+        @content;
+    }
+}
+
+@mixin breakpoint-sm-up {
+
+    //431px -> up
+    @media (min-width: $sm-up) {
+        @content;
+    }
+}

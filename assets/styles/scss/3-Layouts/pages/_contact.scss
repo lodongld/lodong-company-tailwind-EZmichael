@@ -1,0 +1,47 @@
+#contactPage {
+    #mobileView {
+        @include breakpoint-lg {
+            display: block;
+        }
+
+        @include breakpoint-lg-up {
+            display: none;
+        }
+
+        .heroSection {
+            background: url('../../images/bg/bg-contact-mobile.png');
+            background-size: cover;
+            background-position: bottom right;
+            background-repeat: no-repeat;
+            height: 548px;
+
+            .headerMain {
+                height: 548px;
+                display: flex;
+                justify-content: space-between;
+                align-items: start;
+                flex-direction: column;
+            }
+        }
+    }
+
+    #desktopView {
+        background: url('../../images/bg/bg-contact.png');
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+
+        width: 100%;
+
+        @include breakpoint-lg {
+            display: none !important;
+        }
+
+        @include breakpoint-lg-up {
+            display: block !important;
+        }
+
+
+    }
+}
+
