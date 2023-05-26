@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 })
 
-var lastScrollTop = 0;
+let lastScrollTop = 0;
 
 $(window).scroll(function () {
     const scrollPosition = $(window).scrollTop();
@@ -35,17 +35,11 @@ $(window).scroll(function () {
     });
 
     if (scrollPosition < lastScrollTop) {
-        console.log('xxx')
         $('#desktopView section').each(function () {
             const elementOffset = $(this).offset().top;
-           
-            // $(this).addClass('');
             $(this).addClass('aniUtil_scrollDiv');
             $(this).find('.right').addClass('ani_bounceInRight aniUtil_active aniUtil_dramatic').css({ 'opacity': '1' });
             $(this).find('.left').addClass('ani_bounceInLeft aniUtil_active aniUtil_dramatic').css({ 'opacity': '1' });
-            
-            // $(this).css({'opacity-0'});
-
         });
     }
 
