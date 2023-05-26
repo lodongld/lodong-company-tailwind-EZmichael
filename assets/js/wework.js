@@ -1,14 +1,3 @@
-function visSection(section) {
-    section.find('.left').addClass("animate__animated animate__bounceInLeft");
-    section.find('.right').addClass("animate__animated animate__bounceInRight");
-}
-
-function hidSection(section) {
-    section.find('.aniIn_bounceInLeft').removeClass("animate__animated animate__bounceInLeft");
-    section.find('.aniIn_bounceInRight').removeClass("animate__animated animate__bounceInRight");
-}
-
-
 document.addEventListener('DOMContentLoaded', function () {
     document.querySelector('#weworkPage').classList.add('slideUp');
     scrollToTop();
@@ -19,12 +8,19 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 })
 
+var lastScrollTop = 0;
+
 $(window).scroll(function () {
     const scrollPosition = $(window).scrollTop();
     const windowHeight = $(window).height();
 
-    $('section').each(function () {
+    $('#desktopView section').each(function () {
         const elementOffset = $(this).offset().top;
+
+        $(this).removeClass('aniUtil_scrollDiv');
+        $(this).find('.right').removeClass('ani_bounceInRight aniUtil_active aniUtil_dramatic').css({'opacity': '1'});
+        $(this).find('.left').removeClass('ani_bounceInLeft aniUtil_active aniUtil_dramatic').css({ 'opacity': '1' });
+
         if (scrollPosition > elementOffset - windowHeight + 50) {
             $(this).removeClass('opacity-0');
             $(this).find('.right').addClass('animate__animated animate__bounceInRight');
@@ -37,4 +33,21 @@ $(window).scroll(function () {
             $(this).find('.left').removeClass('animate__animated animate__bounceInLeft');
         }
     });
+
+    if (scrollPosition < lastScrollTop) {
+        console.log('xxx')
+        $('#desktopView section').each(function () {
+            const elementOffset = $(this).offset().top;
+           
+            // $(this).addClass('');
+            $(this).addClass('aniUtil_scrollDiv');
+            $(this).find('.right').addClass('ani_bounceInRight aniUtil_active aniUtil_dramatic').css({ 'opacity': '1' });
+            $(this).find('.left').addClass('ani_bounceInLeft aniUtil_active aniUtil_dramatic').css({ 'opacity': '1' });
+            
+            // $(this).css({'opacity-0'});
+
+        });
+    }
+
+    lastScrollTop = scrollPosition;
 });
